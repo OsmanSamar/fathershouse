@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import logo from "../assets/Fathers_House_Logo_V1.png";
 
@@ -10,10 +9,11 @@ const FNavbar = () => {
       style={{
         backgroundColor: "#F8F4EE",
         fontSize: "16px",
-        padding: "10px 20px",
+        // padding: "10px 20px",
       }}
     >
-      <Container fluid>
+      <Container>
+        {/* fluid */}
         <Navbar.Brand href="/">
           {/* style={{ paddingLeft: "100px" }} */}
           <img
@@ -28,55 +28,55 @@ const FNavbar = () => {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* Toggle button with custom icon  */}
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <span className="navbar-toggler-icon"></span>
+        </Navbar.Toggle> */}
+
         <Navbar.Collapse
           id="basic-navbar-nav"
           className="justify-content-center"
         >
-          <Nav className="text-center">
-            <Nav.Link
-              href="#watch"
-              style={{ margin: "0 5px", fontSize: "1rem" }}
-            >
-              Watch
-            </Nav.Link>
-            <Nav.Link
-              href="#mission"
-              style={{ margin: "0 5px", fontSize: "1rem" }}
-            >
-              Mission
-            </Nav.Link>
-            <Nav.Link
-              href="#ministry"
-              style={{ margin: "0 5px", fontSize: "1rem" }}
-            >
-              Ministry
-            </Nav.Link>
-            <Nav.Link
-              href="#team"
-              style={{ margin: "0 5px", fontSize: "1rem" }}
-            >
-              Team
-            </Nav.Link>
-            <Nav.Link
-              href="#contact"
-              style={{ margin: "0 5px", fontSize: "1rem" }}
-            >
-              Contact
-            </Nav.Link>
+          <Nav className="text-center ">
+            <Nav.Link href="#watch">Watch</Nav.Link>
+            <Nav.Link href="#mission">Mission</Nav.Link>
+            <Nav.Link href="#ministry">Ministry</Nav.Link>
+            <Nav.Link href="#team">Team</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
+
+          {/* Button for small and medium screens (including tablets) */}
+          <div className="text-center d-lg-none">
+            <Button
+              className="btn btn-success "
+              style={{
+                borderRadius: "4px",
+                color: "#463F2F",
+                backgroundColor: "#F49640",
+                margin: "10px",
+                fontSize: "1rem",
+              }}
+            >
+              Stay informed
+            </Button>
+          </div>
+        </Navbar.Collapse>
+
+        {/* Button for larger screens (lg and up) */}
+        <div className="me-auto d-none d-lg-block">
           <Button
             className="btn btn-success"
             style={{
               borderRadius: "4px",
               color: "#463F2F",
               backgroundColor: "#F49640",
-              marginLeft: "100px",
+              margin: "10px",
               fontSize: "1rem",
             }}
           >
             Stay informed
           </Button>
-        </Navbar.Collapse>
+        </div>
       </Container>
     </Navbar>
   );
