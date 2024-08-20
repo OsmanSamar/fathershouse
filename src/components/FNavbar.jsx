@@ -37,7 +37,15 @@ const FNavbar = () => {
           id="basic-navbar-nav"
           className="justify-content-center"
         >
-          <Nav className="text-center ">
+          <Nav
+            className="text-center"
+            style={{
+              color: "#463F2F",
+              fontSize: "1rem",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: 500,
+            }}
+          >
             <Nav.Link href="#watch">Watch</Nav.Link>
             <Nav.Link href="#mission">Mission</Nav.Link>
             <Nav.Link href="#ministry">Ministry</Nav.Link>
@@ -55,6 +63,8 @@ const FNavbar = () => {
                 backgroundColor: "#F49640",
                 margin: "10px",
                 fontSize: "1rem",
+                fontFamily: "Inter, sans-serif",
+                fontWeight: 600,
               }}
             >
               Stay informed
@@ -72,6 +82,8 @@ const FNavbar = () => {
               backgroundColor: "#F49640",
               margin: "10px",
               fontSize: "1rem",
+              fontFamily: "Inter, sans-serif",
+              fontWeight: 600,
             }}
           >
             Stay informed
