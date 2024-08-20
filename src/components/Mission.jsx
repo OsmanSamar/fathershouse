@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
-
 import { useMediaQuery } from "react-responsive";
 
 const Mission = () => {
   const isSmallScreen = useMediaQuery({ maxWidth: 767 });
-  const isMediumScreen = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+  const [expanded, setExpanded] = useState(false);
+  //const isMediumScreen = useMediaQuery({ minWidth: 768, maxWidth: 991 });
   // const [showMore, setShowMore] = useState(false);
 
-  //   const handleToggleReadMore = () => {
-  //     setShowMore(!showMore);
-  //   };
+  const handleReadMore = () => {
+    setExpanded(!expanded);
+  };
 
   return (
     <Card
@@ -154,22 +154,73 @@ const Mission = () => {
               </span>{" "}
             </Card.Text>
 
+            <Card.Text
+              style={{
+                color: "#463F2F",
+                fontFamily: "Inter, sans-serif",
+                fontSize: "1rem",
+                lineHeight: "1.2",
+                letterSpacing: "0px",
+                padding: "0.7rem",
+                textAlign: "left",
+                opacity: expanded ? 1 : 0.7, // Full opacity when expanded
+                margin: "1rem 1rem 2rem 1.2rem",
+                overflow: "hidden",
+                display: "-webkit-box",
+                WebkitLineClamp: expanded ? "unset" : 3, // Show 3 lines if not expanded. Limits the text to 3 lines when not expanded
+                WebkitBoxOrient: "vertical",
+                textOverflow: "ellipsis",
+                transition: "opacity 0.3s ease-in-out", // Smooth transition for opacity
+
+                //overflow: "hidden", display: "-webkit-box", WebkitBoxOrient: "vertical".
+                // These CSS properties work together to ensure the text truncates
+                //after 3 lines and displays an ellipsis (...) when clipped.
+              }}
+            >
+              To accomplish the above our dedication to equipping the Body of
+              Christ to live in grace is of absolute importance. Grace is the
+              unmerited Favor and empowerment of God that enables believers to
+              walk in{" "}
+              <span
+                style={{
+                  fontWeight: "bold",
+                }}
+              >
+                freedom, forgiveness, and righteousness.
+              </span>{" "}
+              Through teaching, mentoring, and practical ministry, we empower
+              believers to experience the fullness of God’s grace, leading to
+              transformed lives, restored relationships, and impactful service
+              in the Kingdom.
+            </Card.Text>
+
             <Button
               style={{
-                color: "#ffffff",
-                backgroundColor: "#463f2f",
-                border: "4px",
-                padding: "1rem 1rem",
-                minWidth: "120px",
-                textAlign: "center",
+                color: "#463F2F",
+                backgroundColor: "transparent",
+                border: "none",
+                padding: "0",
                 fontSize: "1rem",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: 600,
                 letterSpacing: "0px",
                 opacity: 1,
+                display: "inline-flex", // Aligns text and arrow in one line
+                alignItems: "center",
               }}
+              onClick={handleReadMore}
             >
-              Mission in short
+              {expanded ? "Show less" : "Read more"}
+              <span
+                style={{
+                  marginLeft: "0.5rem",
+                  display: "inline-block",
+                  transform: expanded ? "rotate(-135deg)" : "rotate(45deg)", // Rotate arrow up when expanded
+                  border: "solid #463F2F",
+                  borderWidth: "0 0.1rem 0.1rem 0",
+                  padding: "0.25rem",
+                }}
+              ></span>
             </Button>
           </>
         ) : (
@@ -183,7 +234,8 @@ const Mission = () => {
                 lineHeight: "1.2",
                 letterSpacing: "0px",
                 opacity: 1,
-                margin: "2rem 4rem 0 3rem",
+                margin: "2rem auto 0 auto",
+                width: "49%",
               }}
             >
               Our mission is to activate, empower and mobilize believers through
@@ -194,8 +246,8 @@ const Mission = () => {
 
             <Row
               style={{
-                margin: "1rem 1rem 2rem 1.2rem",
-                padding: "6rem",
+                margin: "1rem auto 0 auto",
+                padding: "2.5rem",
                 textAlign: "left",
               }}
             >
@@ -210,7 +262,6 @@ const Mission = () => {
                     opacity: 1,
                     margin: "1rem 1rem 2rem 1.2rem",
                     padding: "0.7rem",
-                    // textAlign: "left",
                   }}
                 >
                   Central to our mission is the call to inspire believers to
@@ -377,11 +428,11 @@ const Mission = () => {
                     color: "#ffffff",
                     backgroundColor: "#463f2f",
                     border: "4px",
-                    padding: "0.7rem 0.7rem",
+                    padding: "0.5rem 1rem",
                     textAlign: "center",
                     fontSize: "1rem",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: 600,
+                    fontWeight: 500,
                     letterSpacing: "0px",
                     opacity: 1,
                     marginLeft: "2rem",
