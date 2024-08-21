@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import Bggroup from "../assets/Group29@.png";
-import MinistryImg from "../assets/Group 63.svg";
+import MinistryMobile from "../assets/Group 63.svg";
+import MinistryDesktop from "../assets/Group 62.svg";
 import { useMediaQuery } from "react-responsive";
 
 const Ministry = () => {
@@ -85,7 +86,7 @@ const Ministry = () => {
                     }}
                   >
                     <Card.Img
-                      src={MinistryImg}
+                      src={MinistryMobile}
                       alt="Ministry Image"
                       style={{
                         opacity: "1",
@@ -106,7 +107,7 @@ const Ministry = () => {
                     }}
                   >
                     <Card.Img
-                      src={MinistryImg}
+                      src={MinistryDesktop}
                       alt="Ministry Image"
                       style={{
                         opacity: "1",
