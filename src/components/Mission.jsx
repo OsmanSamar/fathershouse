@@ -5,8 +5,6 @@ import { useMediaQuery } from "react-responsive";
 const Mission = () => {
   const isSmallScreen = useMediaQuery({ maxWidth: 767 });
   const [expanded, setExpanded] = useState(false);
-  //const isMediumScreen = useMediaQuery({ minWidth: 768, maxWidth: 991 });
-  // const [showMore, setShowMore] = useState(false);
 
   const handleReadMore = () => {
     setExpanded(!expanded);
@@ -101,7 +99,7 @@ const Mission = () => {
                 color: "#463F2F",
                 fontFamily: "Inter, sans-serif",
                 fontSize: "1rem",
-                lineHeight: "1.2",
+                lineHeight: "1.75rem",
                 letterSpacing: "0px",
                 opacity: 1,
                 margin: "1rem 1rem 2rem 1.2rem",
@@ -231,17 +229,31 @@ const Mission = () => {
                 color: "#463F2F",
                 fontFamily: "Inter, sans-serif",
                 fontSize: "1rem",
-                lineHeight: "1.2",
+                lineHeight: "1.5rem",
                 letterSpacing: "0px",
                 opacity: 1,
                 margin: "2rem auto 0 auto",
                 width: "49%",
               }}
             >
-              Our mission is to activate, empower and mobilize believers through
-              the fivefold ministry, inspiring them to passionately pursue God’s
-              purpose for Israël, reconcile Jews and Gentiles, and live
-              victoriously in the abundant grace of God.
+              Our mission is to{" "}
+              <span
+                style={{
+                  fontWeight: "bold",
+                }}
+              >
+                activate, empower and mobilize
+              </span>{" "}
+              believers through the fivefold ministry, inspiring them to
+              passionately pursue God’s purpose for Israël, reconcile Jews and
+              Gentiles, and{" "}
+              <span
+                style={{
+                  fontWeight: "bold",
+                }}
+              >
+                live victoriously in the abundant grace of God.
+              </span>{" "}
             </Card.Text>
 
             <Row
@@ -256,11 +268,11 @@ const Mission = () => {
                   style={{
                     color: "#463F2F",
                     fontFamily: "Inter, sans-serif",
-                    fontSize: "1rem",
-                    lineHeight: "1.2",
+                    fontSize: "0.875rem",
+                    lineHeight: "1.5rem",
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "1rem 1rem 2rem 1.2rem",
+                    margin: "1rem 1rem 1rem 1.2rem",
                     padding: "0.7rem",
                   }}
                 >
@@ -284,11 +296,11 @@ const Mission = () => {
                   style={{
                     color: "#463F2F",
                     fontFamily: "Inter, sans-serif",
-                    fontSize: "1rem",
-                    lineHeight: "1.2",
+                    fontSize: "0.875rem",
+                    lineHeight: "1.5rem",
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "1rem 1rem 2rem 1.2rem",
+                    margin: "1rem 1rem 1rem 1.2rem",
                     padding: "0.7rem",
                     textAlign: "left",
                   }}
@@ -313,11 +325,11 @@ const Mission = () => {
                   style={{
                     color: "#463F2F",
                     fontFamily: "Inter, sans-serif",
-                    fontSize: "1rem",
-                    lineHeight: "1.2",
+                    fontSize: "0.875rem",
+                    lineHeight: "1.5rem",
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "1rem 1rem 2rem 1.2rem",
+                    margin: "1rem 1rem 1rem 1.2rem",
                     padding: "0.7rem",
                     textAlign: "left",
                   }}
@@ -345,11 +357,13 @@ const Mission = () => {
                   style={{
                     color: "#463F2F",
                     fontFamily: "Inter, sans-serif",
-                    fontSize: "1rem",
-                    lineHeight: "1.2",
+                    // fontSize: "1rem",
+                    // lineHeight: "1.2",
+                    fontSize: "0.875rem",
+                    lineHeight: "1.5rem",
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "1rem 1rem 2rem 1.2rem",
+                    margin: "1rem 1rem 1rem 1.2rem",
                     padding: "0.7rem",
                     textAlign: "left",
                   }}
@@ -379,11 +393,11 @@ const Mission = () => {
                   style={{
                     color: "#463F2F",
                     fontFamily: "Inter, sans-serif",
-                    fontSize: "1rem",
-                    lineHeight: "1.2",
+                    fontSize: "0.875rem",
+                    lineHeight: "1.5rem",
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "1rem 1rem 2rem 1.2rem",
+                    margin: "1rem 1rem 3rem 1.2rem",
                     padding: "0.7rem",
                     textAlign: "left",
                   }}

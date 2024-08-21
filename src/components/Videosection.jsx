@@ -36,17 +36,18 @@ const Videosection = () => {
           //  padding: "2rem", // Default padding for small screens
           position: "relative",
         }}
-        className="p-4 p-sm-6 p-md-6 p-lg-7 " // Bootstrap responsive padding classes
+        className="p-4 p-sm-auto p-md-5 p-lg-7  " // Bootstrap responsive padding classes
       >
-        <Row className="w-100">
+        {/* The headers */}
+        <Row className="w-100 m-auto  ">
           <Col
-            xs={12}
-            md={9} // Header takes 9 columns on medium and up
-            lg={10} // Header takes 10 columns on large and up
-            className="text-center text-md-start" // Center text on small screens
+            //  xs={12}
+            // md={9} // Header takes 9 columns on medium and up
+            //  lg={10} // Header takes 10 columns on large and up
+            className="text-center text-md-start"
           >
             <h3
-              className={isMobile ? "text-2xl mb-4" : "text-5xl"}
+              className={isMobile ? "text-2xl " : "text-5xl"}
               style={{
                 color: "#F49640",
                 fontFamily: "Inter, sans-serif",
@@ -54,8 +55,7 @@ const Videosection = () => {
                 lineHeight: "1.2",
                 letterSpacing: "0px",
                 opacity: 1,
-
-                marginTop: "12rem",
+                marginTop: "2rem",
               }}
             >
               Video's
@@ -68,12 +68,15 @@ const Videosection = () => {
                 lineHeight: "1.2",
                 letterSpacing: "0px",
                 opacity: 1,
+                marginTop: "2rem",
                 marginBottom: "4rem",
               }}
             >
               Watch teachings
             </h3>
           </Col>
+          {/* Button */}
+
           <Col
             xs={12}
             md={3} // Button takes 3 columns on medium and up
@@ -87,14 +90,15 @@ const Videosection = () => {
                   backgroundColor: "#F49640",
                   border: "none",
                   padding: "0.8rem 1.5rem",
-                  minWidth: "100px",
+                  minWidth: "10px",
                   textAlign: "center",
-                  fontSize: "1rem",
+                  fontSize: "0.75rem",
                   fontFamily: "Inter, sans-serif",
                   fontWeight: 600,
                   letterSpacing: "0px",
                   opacity: 1,
-                  marginTop: "12rem",
+                  marginTop: "3rem",
+                  marginBottom: "4rem",
                 }}
               >
                 Watch more video's
@@ -159,12 +163,13 @@ const Videosection = () => {
                 padding: "1rem 1rem",
                 minWidth: "120px",
                 textAlign: "center",
-                fontSize: "1rem",
+                fontSize: "0.75rem",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: 600,
                 letterSpacing: "0px",
                 opacity: 1,
-                marginTop: "2rem ",
+                marginTop: "1rem ",
+                marginBottom: "1rem",
               }}
             >
               Watch more video's
