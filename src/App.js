@@ -1,5 +1,6 @@
 import FNavbar from "./components/FNavbar";
 import Hero from "./components/Hero";
+import MFire from "./components/MFire";
 import Ministry from "./components/Ministry";
 import Mission from "./components/Mission";
 import Videosection from "./components/Videosection";
@@ -12,6 +13,7 @@ function App() {
       <Videosection />
       <Mission />
       <Ministry />
+      <MFire />
     </div>
   );
 }
