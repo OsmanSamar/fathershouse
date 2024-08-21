@@ -99,7 +99,7 @@ const Mission = () => {
                 color: "#463F2F",
                 fontFamily: "Inter, sans-serif",
                 fontSize: "1rem",
-                lineHeight: "1.75rem",
+                lineHeight: "1.5rem",
                 letterSpacing: "0px",
                 opacity: 1,
                 margin: "1rem 1rem 2rem 1.2rem",
@@ -128,7 +128,7 @@ const Mission = () => {
                 color: "#463F2F",
                 fontFamily: "Inter, sans-serif",
                 fontSize: "1rem",
-                lineHeight: "1.2",
+                lineHeight: "1.5rem",
                 letterSpacing: "0px",
                 opacity: 1,
                 margin: "1rem 1rem 2rem 1.2rem",
@@ -157,7 +157,7 @@ const Mission = () => {
                 color: "#463F2F",
                 fontFamily: "Inter, sans-serif",
                 fontSize: "1rem",
-                lineHeight: "1.2",
+                lineHeight: "1.5",
                 letterSpacing: "0px",
                 padding: "0.7rem",
                 textAlign: "left",
@@ -191,6 +191,94 @@ const Mission = () => {
               transformed lives, restored relationships, and impactful service
               in the Kingdom.
             </Card.Text>
+
+            {expanded && (
+              <>
+                <Card.Text
+                  style={{
+                    color: "#463F2F",
+                    fontFamily: "Inter, sans-serif",
+                    fontSize: "0.875rem",
+                    lineHeight: "1.5",
+                    letterSpacing: "0px",
+                    opacity: 1,
+                    margin: "1rem 1rem 1rem 1.2rem",
+                    padding: "0.7rem",
+                    textAlign: "left",
+                  }}
+                >
+                  Our mission is to help to establish the{" "}
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                    }}
+                  >
+                    transformative power of the Fivefold ministry,
+                  </span>{" "}
+                  which serves as a catalyst for believers to fervently pursue
+                  God’s divine purpose for Israel, foster unity between Jews and
+                  Gentiles as the{" "}
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                    }}
+                  >
+                    “One New Man”
+                  </span>{" "}
+                  , and equip the Body of Christ to live victoriously in grace.
+                </Card.Text>
+
+                <Card.Text
+                  style={{
+                    color: "#463F2F",
+                    fontFamily: "Inter, sans-serif",
+                    fontSize: "0.875rem",
+                    lineHeight: "1.5",
+                    letterSpacing: "0px",
+                    opacity: 1,
+                    margin: "1rem 1rem 1rem 1.2rem",
+                    padding: "0.7rem",
+                    textAlign: "left",
+                  }}
+                >
+                  The Fivefold ministry, comprising apostles, prophets,
+                  evangelists, pastors, and teachers, stands as pillars of
+                  spiritual guidance and empowerment within the Church.{" "}
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Apostles
+                  </span>{" "}
+                  pioneer new territories, establishing foundations of faith and
+                  kingdom principles.{" "}
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Prophets
+                  </span>{" "}
+                  bring divine revelation, insight and power, guiding believers
+                  in aligning with God’s will and purposes.{" "}
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Evangelists
+                  </span>{" "}
+                  passionately spread the Gospel, leading souls to Christ and
+                  igniting a fervor for salvation. Pastors nurture and care for
+                  God’s flock, providing pastoral care, example, and spiritual
+                  nourishment. Teachers impart knowledge, wisdom, and
+                  understanding, equipping believers to grow in faith and
+                  maturity.
+                </Card.Text>
+                {/*  */}
+              </>
+            )}
 
             <Button
               style={{
