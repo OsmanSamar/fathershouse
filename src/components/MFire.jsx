@@ -12,15 +12,14 @@ const MFire = () => {
           style={{
             backgroundColor: "#F49640",
             width: "100vw",
+            padding: "2rem 0",
           }}
         >
           <Container>
             <Card.Body
-              style={
-                {
-                  // margin: "2rem 7rem 4rem 7rem",
-                }
-              }
+              style={{
+                margin: "2rem 2rem 4rem 1rem",
+              }}
             >
               {/* <Row className={isMobile ? "text-center" : ""}> */}
               <Row className={`${isMobile ? "text-center  " : ""}`}>
@@ -42,8 +41,8 @@ const MFire = () => {
                       lineHeight: "1.2",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "1rem 1rem 0 1.2rem",
-                      padding: "0.7rem",
+                      margin: "1rem 0 0 0",
+                      //padding: "0.7rem",
                       // margin: "0.5rem",
                       // padding: "0.5rem",
                     }}
@@ -59,8 +58,10 @@ const MFire = () => {
                       lineHeight: "1.2",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "0 1rem 2rem 1.2rem",
-                      padding: "0.7rem",
+                      //   margin: "0 1rem 2rem 1.2rem",
+                      //   padding: "0.7rem",
+                      margin: "1rem 0 0 0",
+                      //padding: "0.7rem",
                       fontSize: "1.5rem",
 
                       // margin: "0.5rem",
@@ -74,13 +75,15 @@ const MFire = () => {
                     style={{
                       color: "#463F2F",
                       fontFamily: "Inter, sans-serif",
-                      fontSize: "0.75rem",
+                      fontSize: "0.875rem",
                       fontWeight: 500,
                       lineHeight: "1.5",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "0 1rem 2rem 1.2rem",
-                      padding: "0.7rem",
+                      //   margin: "0 1rem 2rem 1.2rem",
+                      margin: "1rem 0 0 0",
+                      //padding: "0.7rem",
+                      // padding: "0.7rem",
 
                       // margin: "0.5rem",
                       // padding: "0.5rem",
@@ -99,26 +102,45 @@ const MFire = () => {
                   xs={12}
                   md={6}
                   className="d-flex justify-content-center align-items-center "
+                  style={{}}
                 >
                   <Card
                     style={{
-                      width: "auto",
+                      width: "100%",
                       background: "transparent",
                       border: "none",
-                      padding: "2rem 0.5rem 5rem 0.5rem",
-                      margin: "0 1rem 2rem 1.2rem",
-                      // padding: "0.7rem",
+                      padding: "0",
+                      margin: "0",
                     }}
                   >
-                    <Card.Img
-                      // src={MinistryImage}
-                      alt="Ministry Image"
+                    <div
                       style={{
-                        opacity: "1",
+                        position: "relative",
+                        paddingBottom: "56.25%" /* 16:9 Aspect Ratio */,
+                        height: 0,
+                        overflow: "hidden",
                         maxWidth: "100%",
-                        height: "auto",
+                        borderRadius: "8px",
                       }}
-                    />
+                    >
+                      <iframe
+                        src="https://www.youtube.com/embed/tz4dWkR_cbw?si=nJWwCznnVMoMVWjb"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                        style={{
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          width: "100%",
+                          height: "100%",
+                          border: 0,
+                          borderRadius: "8px",
+                        }}
+                      ></iframe>
+                    </div>
                   </Card>
                 </Col>
               </Row>

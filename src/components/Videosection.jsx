@@ -7,15 +7,21 @@ const Videosection = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
 
   const mobileVideos = [
-    { id: 1, video: "video1.mp4", title: "Marcel Gaasenbeek" },
-    { id: 2, video: "video2.mp4", title: "Marcel Gaasenbeek" },
-    { id: 3, video: "video3.mp4", title: "Marcel Gaasenbeek" },
+    // { id: 1, video: "video1.mp4", title: "Marcel Gaasenbeek" },
+    // { id: 2, video: "video2.mp4", title: "Marcel Gaasenbeek" },
+    // { id: 3, video: "video3.mp4", title: "Marcel Gaasenbeek" },
+    { id: 1, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
+    { id: 2, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
+    { id: 3, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
   ];
 
   const videos = [
-    { id: 1, video: "video1.mp4", title: "Marcel Gaasenbeek" },
-    { id: 2, video: "video2.mp4", title: "Marcel Gaasenbeek" },
-    { id: 3, video: "video3.mp4", title: "Marcel Gaasenbeek" },
+    // { id: 1, video: "video1.mp4", title: "Marcel Gaasenbeek" },
+    // { id: 2, video: "video2.mp4", title: "Marcel Gaasenbeek" },
+    // { id: 3, video: "video3.mp4", title: "Marcel Gaasenbeek" },
+    { id: 1, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
+    { id: 2, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
+    { id: 3, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
   ];
 
   return (
@@ -111,7 +117,7 @@ const Videosection = () => {
             <Row className={isMobile ? "g-4" : "g-3"}>
               {(isMobile ? mobileVideos : videos).map((video) => (
                 <Col key={video.id} xs={12} sm={6} md={4}>
-                  <div className="position-relative">
+                  {/* <div className="position-relative">
                     <video
                       src={video.video}
                       controls
@@ -126,6 +132,53 @@ const Videosection = () => {
 
                     <h6
                       className="position-absolute "
+                      style={{
+                        backgroundColor: "#FFFFFF",
+                        color: "#463F2F",
+                        borderRadius: "7px",
+                        boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+                        bottom: "20px", // Move 10px up from the bottom
+                        left: "20px", // Move 10px right from the left edge
+                        margin: "0",
+                        padding: "0.3rem 0.6rem",
+                      }}
+                    >
+                      {video.title}
+                    </h6>
+                  </div> */}
+                  <div className="position-relative">
+                    {video.youtube && (
+                      <div
+                        style={{
+                          position: "relative",
+                          paddingBottom: "56.25%", // 16:9 Aspect Ratio
+                          height: 0,
+                          overflow: "hidden",
+                          borderRadius: "8px",
+                        }}
+                      >
+                        <iframe
+                          src={`https://www.youtube.com/embed/${video.youtube}`}
+                          title={video.title}
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerPolicy="strict-origin-when-cross-origin"
+                          allowFullScreen
+                          style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            border: 0,
+                            borderRadius: "8px",
+                          }}
+                        ></iframe>
+                      </div>
+                    )}
+
+                    <h6
+                      className="position-absolute"
                       style={{
                         backgroundColor: "#FFFFFF",
                         color: "#463F2F",
