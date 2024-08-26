@@ -39,7 +39,7 @@ const Endorsements = () => {
         </div>
       </Container>
       {/* End of Header Section */}
-      <Container className="p-4 p-sm-auto p-md-4 p-lg-6">
+      {/* <Container className="p-4 p-sm-auto p-md-4 p-lg-6">
         <Row>
           <Col
             sm="12"
@@ -82,17 +82,13 @@ const Endorsements = () => {
               }}
             />
           </Col>
-          {/* <Col
-            sm="12"
-            md="4"
-            lg="3"
-            className="mb-9 text-center text-md-start"
-          ></Col> */}
+         
           <Col
             sm="12"
             md="4"
-            lg="6"
-            className="mb-9 text-center text-md-start text-lg-center "
+            // lg="6",
+            lg={{ span: 6, offset: 1 }} // This shifts the column by one unit to the right on large screens
+            className="mb-9 text-center text-md-start text-lg-center  "
           >
             <img
               src={Logo}
@@ -111,12 +107,81 @@ const Endorsements = () => {
               }}
             />
           </Col>
-          {/* <Col
+          
+        </Row>
+      </Container> */}
+
+      <Container className="p-4 p-sm-auto p-md-4 p-lg-6 ">
+        {/* First Row */}
+        <Row>
+          <Col
             sm="12"
             md="4"
             lg="3"
+            className="mb-9 text-center text-md-start "
+          >
+            <img
+              src={Logo}
+              alt="Logo"
+              style={{
+                width: "150px",
+              }}
+            />
+          </Col>
+          <Col sm="12" md="4" lg="3" className="mb-9 text-center text-md-start">
+            <img
+              src={Logo}
+              alt="Logo"
+              style={{
+                width: "150px",
+              }}
+            />
+          </Col>
+          <Col sm="12" md="4" lg="3" className="mb-9 text-center text-md-start">
+            <img
+              src={Logo}
+              alt="Logo"
+              style={{
+                width: "150px",
+              }}
+            />
+          </Col>
+          <Col sm="12" md="4" lg="3" className="mb-9 text-center text-md-start">
+            <img
+              src={Logo}
+              alt="Logo"
+              style={{
+                width: "150px",
+              }}
+            />
+          </Col>
+        </Row>
+
+        {/* Second Row */}
+        <Row>
+          <Col
+            sm="12"
+            md={{ span: 3, offset: 3 }} // Offset the column by 4 to align under the second image in the first row
+            lg={{ span: 3, offset: 3 }} // Offset the column by 3 to align under the second image in the first row
             className="mb-9 text-center text-md-start"
-          ></Col> */}
+          >
+            <img
+              src={Logo}
+              alt="Logo"
+              style={{
+                width: "150px",
+              }}
+            />
+          </Col>
+          <Col sm="12" md="4" lg="3" className="mb-9 text-center text-md-start">
+            <img
+              src={Logo}
+              alt="Logo"
+              style={{
+                width: "150px",
+              }}
+            />
+          </Col>
         </Row>
       </Container>
     </div>
