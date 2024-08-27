@@ -82,6 +82,7 @@ const Ministry = () => {
                       padding: " 2rem 0.5rem 5rem 0.5rem",
                       boxShadow: "none",
                     }}
+                    className="animate__animated animate__rollIn"
                   >
                     <Card.Img
                       src={MinistryMobile}
@@ -104,6 +105,7 @@ const Ministry = () => {
                       padding: " 2rem 0.5rem 5rem 0.5rem",
                       boxShadow: "none",
                     }}
+                    className="animate__animated animate__rollIn"
                   >
                     <Card.Img
                       src={MinistryDesktop}

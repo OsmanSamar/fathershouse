@@ -10,7 +10,6 @@ const Hero = () => {
           backgroundImage: `url(${Heroimg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          // height: "100vh",
           position: "relative",
           color: "#ffffff",
           display: "flex",
@@ -58,6 +57,7 @@ const Hero = () => {
                 Father’s House
               </h6>
               <h1
+                className="animate__animated animate__backInUp"
                 style={{
                   fontSize: "clamp(1.5rem, 2.6vw + 1rem, 4rem)", //clamp for responsiveness
                   fontFamily: "Inter, sans-serif",
@@ -89,7 +89,7 @@ const Hero = () => {
                     padding: "0.5rem 0.5rem", //padding to make buttons the same size
                     minWidth: "120px", // Ensure minimum width is the same
                     textAlign: "center",
-                    fontSize: "1rem", //16px
+                    fontSize: "1rem",
                     fontFamily: "inter, semibold",
                     fontWeight: 600,
                     letterSpacing: "0px", // default spacing.

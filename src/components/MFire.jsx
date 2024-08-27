@@ -106,6 +106,7 @@ const MFire = () => {
                         maxWidth: "100%",
                         borderRadius: "8px",
                       }}
+                      className="position-relative animate__animated animate__rotateInUpRight"
                     >
                       <iframe
                         src="https://www.youtube.com/embed/tz4dWkR_cbw?si=nJWwCznnVMoMVWjb"

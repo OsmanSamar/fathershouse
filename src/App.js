@@ -7,22 +7,30 @@ import Ministry from "./components/Ministry";
 import Mission from "./components/Mission";
 import TestimonialsSlider from "./components/TestimonialsSlider";
 import Videosection from "./components/Videosection";
+import "animate.css";
+//import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Spinner animation="grow" /> */}
+    <>
       <FNavbar />
       <Hero />
       <Videosection />
       <Mission />
       <Ministry />
+      {/* <Router>
+        <Routes>
+          <Route path="/Mission" element={<Mission />} />
+          <Route path="/Videosection" element={<Videosection />} />
+          <Route path="/Ministry" element={<Ministry />} />
+        </Routes>
+      </Router> */}
       <MFire />
       <TestimonialsSlider />
-      {/* <Test /> */}
+
       <Endorsements />
       <Footer />
-    </div>
+    </>
   );
 }
 

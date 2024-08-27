@@ -7,18 +7,12 @@ const Videosection = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
 
   const mobileVideos = [
-    // { id: 1, video: "video1.mp4", title: "Marcel Gaasenbeek" },
-    // { id: 2, video: "video2.mp4", title: "Marcel Gaasenbeek" },
-    // { id: 3, video: "video3.mp4", title: "Marcel Gaasenbeek" },
     { id: 1, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
     { id: 2, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
     { id: 3, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
   ];
 
   const videos = [
-    // { id: 1, video: "video1.mp4", title: "Marcel Gaasenbeek" },
-    // { id: 2, video: "video2.mp4", title: "Marcel Gaasenbeek" },
-    // { id: 3, video: "video3.mp4", title: "Marcel Gaasenbeek" },
     { id: 1, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
     { id: 2, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
     { id: 3, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
@@ -32,7 +26,7 @@ const Videosection = () => {
           backgroundImage: `url(${Bggroup})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          // height: "100vh",
+
           color: "#F8F4EE",
           display: "flex",
           flexDirection: "column",
@@ -79,8 +73,8 @@ const Videosection = () => {
 
             <Col
               xs={12}
-              md={3} // Button takes 3 columns on medium and up
-              lg={2} // Button takes 2 columns on large and up
+              md={3}
+              lg={2}
               className="d-flex justify-content-md-end justify-content-center align-items-center"
             >
               {!isMobile && (
@@ -118,36 +112,7 @@ const Videosection = () => {
             <Row className={isMobile ? "g-4" : "g-3"}>
               {(isMobile ? mobileVideos : videos).map((video) => (
                 <Col key={video.id} xs={12} sm={6} md={4}>
-                  {/* <div className="position-relative">
-                    <video
-                      src={video.video}
-                      controls
-                      className="w-100"
-                      style={{
-                        objectFit: "cover",
-                        borderRadius: "8px",
-                      }}
-                    >
-                      Your browser does not support the video tag.
-                    </video>
-
-                    <h6
-                      className="position-absolute "
-                      style={{
-                        backgroundColor: "#FFFFFF",
-                        color: "#463F2F",
-                        borderRadius: "7px",
-                        boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
-                        bottom: "20px", // Move 10px up from the bottom
-                        left: "20px", // Move 10px right from the left edge
-                        margin: "0",
-                        padding: "0.3rem 0.6rem",
-                      }}
-                    >
-                      {video.title}
-                    </h6>
-                  </div> */}
-                  <div className="position-relative">
+                  <div className="position-relative animate__animated animate__rotateInUpRight">
                     {video.youtube && (
                       <div
                         style={{
@@ -177,7 +142,6 @@ const Videosection = () => {
                         ></iframe>
                       </div>
                     )}
-
                     <h6
                       className="position-absolute"
                       style={{
@@ -185,8 +149,8 @@ const Videosection = () => {
                         color: "#463F2F",
                         borderRadius: "7px",
                         boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
-                        bottom: "20px", // Move 10px up from the bottom
-                        left: "20px", // Move 10px right from the left edge
+                        bottom: "20px",
+                        left: "20px",
                         margin: "0",
                         padding: "0.3rem 0.6rem",
                       }}
@@ -200,7 +164,6 @@ const Videosection = () => {
           </Container>
 
           {/* Spacer */}
-          {/* <div style={{ height: "2rem" }}></div> */}
 
           {/* Button Section for Mobile */}
           {isMobile && (

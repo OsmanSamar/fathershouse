@@ -100,11 +100,12 @@ const TestimonialsSlider = () => {
                     borderRadius: "0.375rem",
                     marginBottom: "2rem",
                   }}
+                  className="animate__animated animate__zoomIn"
                 >
                   <Image
                     src={Avatar}
                     alt={`Avatar ${cardId}`}
-                    className="center"
+                    className="center  "
                     style={{
                       position: "absolute",
                       height: "250px",
@@ -117,6 +118,7 @@ const TestimonialsSlider = () => {
                 </div>
                 <MDBCardBody className="text-center text-md-start">
                   <MDBCardTitle
+                    className=" animate__animated animate__zoomInRight"
                     style={{
                       fontSize: "1.2rem",
                       lineHeight: "1.2",

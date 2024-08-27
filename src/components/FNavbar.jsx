@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import logo from "../assets/Fathers_House_Logo_V1.png";
 import { FaBars, FaTimes } from "react-icons/fa";
+//import { Link } from "react-router-dom";
 
 const FNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,7 +68,12 @@ const FNavbar = () => {
             >
               Watch
             </Nav.Link>
-            <Nav.Link href="#mission" style={{ margin: "0 1rem" }}>
+            <Nav.Link
+              href="#mission"
+              // as={Link}
+              // to="/Mission"
+              style={{ margin: "0 1rem" }}
+            >
               Mission
             </Nav.Link>
             <Nav.Link href="#ministry" style={{ margin: "0 1rem" }}>
@@ -82,9 +88,9 @@ const FNavbar = () => {
           </Nav>
 
           {/* Button for small and medium screens (including tablets) */}
-          <div className="text-center d-lg-none">
+          <div className="text-center d-lg-none ">
             <Button
-              className="btn btn-success "
+              className="btn btn-success  "
               style={{
                 borderRadius: "4px",
                 color: "#463F2F",
@@ -100,7 +106,7 @@ const FNavbar = () => {
           </div>
         </Navbar.Collapse>
         {/* Button for larger screens (lg and up) */}
-        <div className="me-auto d-none d-lg-block">
+        <div className="me-auto d-none d-lg-block ">
           <Button
             className="btn btn-success"
             style={{
