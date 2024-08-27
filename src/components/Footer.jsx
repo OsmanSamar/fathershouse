@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Bggroup from "../assets/Group29@.png";
 
 const Footer = () => {
+  // Button Style
+  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   return (
     <Container fluid style={{ padding: 0, borderTop: "1px solid #463F2F" }}>
       <Row className=" g-0">
@@ -173,6 +176,11 @@ const Footer = () => {
                 opacity: 1,
 
                 textDecoration: "underline",
+
+                // textDecoration: "none",
+                // borderBottom: "1px solid #463F2F",
+                // paddingBottom: "",
+                // display: "inline-block",
               }}
             >
               Website by Code Blauw
@@ -354,8 +362,10 @@ const Footer = () => {
               <Button
                 className="btn btn-success"
                 style={{
-                  backgroundColor: "#463F2F",
-                  color: "#FFFFFF",
+                  // backgroundColor: "#463F2F",
+                  //color: "#FFFFFF",
+                  color: isHovered ? "#463F2F" : "#FFFFFF",
+                  backgroundColor: isHovered ? "#FFFFFF" : "#463F2F",
                   padding: "0.5rem",
                   borderRadius: "4px",
                   border: "none",
@@ -367,7 +377,18 @@ const Footer = () => {
                   fontSize: "0.75rem",
                   letterSpacing: "0px",
                   opacity: 1,
+                  transform: isClicked
+                    ? "scale(0.95)"
+                    : isHovered
+                    ? "scale(1.05)"
+                    : "scale(1)",
+                  transition:
+                    "transform 0.3s ease, background-color 0.3s ease, color 0.3s ease",
                 }}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                onMouseDown={() => setIsClicked(true)}
+                onMouseUp={() => setIsClicked(false)}
               >
                 Subscribe
               </Button>
@@ -375,8 +396,7 @@ const Footer = () => {
           </Card>
         </Col>
 
-        {/* Rights REserved */}
-        {/* Rights Reserved */}
+        {/* Rights Reserved  On Sm Only*/}
         <Container style={{ backgroundColor: "#F7F4EF" }}>
           <div
             className="  d-flex flex-column d-md-none "
@@ -428,7 +448,6 @@ const Footer = () => {
                 fontSize: "0.7rem",
                 letterSpacing: "0px",
                 opacity: 1,
-
                 textDecoration: "underline",
               }}
             >

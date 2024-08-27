@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Button, Row, Col } from "react-bootstrap";
 import Bggroup from "../assets/Group.png";
 import { useMediaQuery } from "react-responsive";
 
 const Videosection = () => {
+  // Button Style
+  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
 
   const mobileVideos = [
@@ -78,11 +81,37 @@ const Videosection = () => {
               className="d-flex justify-content-md-end justify-content-center align-items-center"
             >
               {!isMobile && (
+                // <Button
+                //   className="btn btn-success"
+                //   style={{
+                //     color: "#463F2F",
+                //     backgroundColor: "#F49640",
+                //     border: "none",
+                //     padding: "7px ",
+                //     height: "42px",
+                //     width: "200px",
+                //     maxWidth: "100%",
+                //     textAlign: "center",
+                //     fontSize: "0.75rem",
+                //     fontFamily: "Inter, sans-serif",
+                //     fontWeight: 500,
+                //     letterSpacing: "0px",
+                //     opacity: 1,
+                //     marginTop: "3rem",
+                //     marginBottom: "2rem",
+                //   }}
+                // >
+                //   Watch more video's
+                // </Button>
+
                 <Button
                   className="btn btn-success"
                   style={{
-                    color: "#463F2F",
-                    backgroundColor: "#F49640",
+                    borderRadius: "4px",
+                    // color: "#463F2F",
+                    color: isHovered ? "#ffffff" : "#463F2F",
+                    // backgroundColor: "#F49640",
+                    backgroundColor: isHovered ? "#d97f2e" : "#F49640",
                     border: "none",
                     padding: "7px ",
                     height: "42px",
@@ -96,7 +125,21 @@ const Videosection = () => {
                     opacity: 1,
                     marginTop: "3rem",
                     marginBottom: "2rem",
+                    transform: isClicked
+                      ? "scale(0.95)"
+                      : isHovered
+                      ? "scale(1.05)"
+                      : "scale(1)",
+                    transition:
+                      "transform 0.3s ease, background-color 0.3s ease, color 0.3s ease",
+                    // boxShadow: isHovered
+                    //   ? "0px 8px 15px rgba(0, 0, 0, 0.2)"
+                    //   : "none",
                   }}
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                  onMouseDown={() => setIsClicked(true)}
+                  onMouseUp={() => setIsClicked(false)}
                 >
                   Watch more video's
                 </Button>

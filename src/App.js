@@ -8,28 +8,31 @@ import Mission from "./components/Mission";
 import TestimonialsSlider from "./components/TestimonialsSlider";
 import Videosection from "./components/Videosection";
 import "animate.css";
-//import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+//import Welcome from "./components/Welcome";
 
 function App() {
   return (
     <>
+      {/* <Welcome /> */}
       <FNavbar />
       <Hero />
-      <Videosection />
-      <Mission />
-      <Ministry />
-      {/* <Router>
-        <Routes>
-          <Route path="/Mission" element={<Mission />} />
-          <Route path="/Videosection" element={<Videosection />} />
-          <Route path="/Ministry" element={<Ministry />} />
-        </Routes>
-      </Router> */}
+      <div id="watch">
+        <Videosection />
+      </div>
+      <div id="mission">
+        <Mission />
+      </div>
+      <div id="ministry">
+        <Ministry />
+      </div>
       <MFire />
-      <TestimonialsSlider />
-
+      <div id="team">
+        <TestimonialsSlider />
+      </div>
       <Endorsements />
-      <Footer />
+      <div id="contact">
+        <Footer />
+      </div>
     </>
   );
 }

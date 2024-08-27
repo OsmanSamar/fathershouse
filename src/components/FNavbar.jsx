@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import logo from "../assets/Fathers_House_Logo_V1.png";
 import { FaBars, FaTimes } from "react-icons/fa";
-//import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const FNavbar = () => {
+  // Button Style
+  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -64,32 +68,36 @@ const FNavbar = () => {
               style={{
                 margin: "0 1rem",
               }}
-              // className="mx-sm-4"
             >
-              Watch
+              <Link to="watch" smooth={true} duration={500}>
+                Watch
+              </Link>
             </Nav.Link>
-            <Nav.Link
-              href="#mission"
-              // as={Link}
-              // to="/Mission"
-              style={{ margin: "0 1rem" }}
-            >
-              Mission
+            <Nav.Link href="#mission" style={{ margin: "0 1rem" }}>
+              <Link to="mission" smooth={true} duration={500}>
+                Mission
+              </Link>
             </Nav.Link>
             <Nav.Link href="#ministry" style={{ margin: "0 1rem" }}>
-              Ministry
+              <Link to="ministry" smooth={true} duration={500}>
+                Ministry
+              </Link>
             </Nav.Link>
             <Nav.Link href="#team" style={{ margin: "0 1rem" }}>
-              Team
+              <Link to="team" smooth={true} duration={500}>
+                Team
+              </Link>
             </Nav.Link>
             <Nav.Link href="#contact" style={{ margin: "0 1rem" }}>
-              Contact
+              <Link to="contact" smooth={true} duration={500}>
+                Contact
+              </Link>
             </Nav.Link>
           </Nav>
 
           {/* Button for small and medium screens (including tablets) */}
           <div className="text-center d-lg-none ">
-            <Button
+            {/* <Button
               className="btn btn-success  "
               style={{
                 borderRadius: "4px",
@@ -102,6 +110,37 @@ const FNavbar = () => {
               }}
             >
               Stay informed
+            </Button> */}
+
+            <Button
+              className="btn btn-success"
+              style={{
+                borderRadius: "4px",
+                // color: "#463F2F",
+                color: isHovered ? "#ffffff" : "#463F2F",
+                // backgroundColor: "#F49640",
+                backgroundColor: isHovered ? "#d97f2e" : "#F49640",
+                margin: "10px",
+                fontSize: "1rem",
+                fontFamily: "Inter, sans-serif",
+                fontWeight: 600,
+                transform: isClicked
+                  ? "scale(0.95)"
+                  : isHovered
+                  ? "scale(1.05)"
+                  : "scale(1)",
+                transition:
+                  "transform 0.3s ease, background-color 0.3s ease, color 0.3s ease",
+                // boxShadow: isHovered
+                //   ? "0px 8px 15px rgba(0, 0, 0, 0.2)"
+                //   : "none",
+              }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              onMouseDown={() => setIsClicked(true)}
+              onMouseUp={() => setIsClicked(false)}
+            >
+              Stay informed
             </Button>
           </div>
         </Navbar.Collapse>
@@ -111,13 +150,27 @@ const FNavbar = () => {
             className="btn btn-success"
             style={{
               borderRadius: "4px",
-              color: "#463F2F",
-              backgroundColor: "#F49640",
+              // color: "#463F2F",
+              color: isHovered ? "#ffffff" : "#463F2F",
+              // backgroundColor: "#F49640",
+              backgroundColor: isHovered ? "#d97f2e" : "#F49640",
               margin: "10px",
               fontSize: "1rem",
               fontFamily: "Inter, sans-serif",
               fontWeight: 600,
+              transform: isClicked
+                ? "scale(0.95)"
+                : isHovered
+                ? "scale(1.05)"
+                : "scale(1)",
+              transition:
+                "transform 0.3s ease, background-color 0.3s ease, color 0.3s ease",
+              // boxShadow: isHovered ? "0px 8px 15px rgba(0, 0, 0, 0.2)" : "none",
             }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            onMouseDown={() => setIsClicked(true)}
+            onMouseUp={() => setIsClicked(false)}
           >
             Stay informed
           </Button>

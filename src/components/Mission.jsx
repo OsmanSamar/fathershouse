@@ -3,6 +3,9 @@ import { Card, Button, Row, Col } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 
 const Mission = () => {
+  // Button Style
+  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const isSmallScreen = useMediaQuery({ maxWidth: 767 });
   const [expanded, setExpanded] = useState(false);
 
@@ -164,7 +167,7 @@ const Mission = () => {
                 margin: "1rem 1rem 2rem 1.2rem",
                 overflow: "hidden",
                 display: "-webkit-box",
-                WebkitLineClamp: expanded ? "unset" : 3, // Show 3 lines if not expanded. Limits the text to 3 lines when not expanded
+                WebkitLineClamp: expanded ? "unset" : 3, // Show 3 lines if not expanded.
                 WebkitBoxOrient: "vertical",
                 textOverflow: "ellipsis",
                 transition: "opacity 0.3s ease-in-out", // Smooth transition for opacity
@@ -529,8 +532,10 @@ const Mission = () => {
                 <Button
                   className="btn btn-success"
                   style={{
-                    color: "#ffffff",
-                    backgroundColor: "#463f2f",
+                    // color: "#ffffff",
+                    color: isHovered ? "#463F2F" : "#ffffff",
+                    // backgroundColor: "#463f2f",
+                    backgroundColor: isHovered ? "#d97f2e" : "#463f2f",
                     border: "4px",
                     padding: "0.5rem 1rem",
                     textAlign: "center",
@@ -540,7 +545,21 @@ const Mission = () => {
                     letterSpacing: "0px",
                     opacity: 1,
                     marginLeft: "2rem",
+                    transform: isClicked
+                      ? "scale(0.95)"
+                      : isHovered
+                      ? "scale(1.05)"
+                      : "scale(1)",
+                    transition:
+                      "transform 0.3s ease, background-color 0.3s ease, color 0.3s ease",
+                    // boxShadow: isHovered
+                    //   ? "0px 8px 15px rgba(0, 0, 0, 0.2)"
+                    //   : "none",
                   }}
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                  onMouseDown={() => setIsClicked(true)}
+                  onMouseUp={() => setIsClicked(false)}
                 >
                   Mission in short
                 </Button>
