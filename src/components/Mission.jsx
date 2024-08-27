@@ -15,7 +15,6 @@ const Mission = () => {
       style={{
         backgroundColor: "#DDD1C7",
         width: "100vw",
-        // marginTop: "6rem",
       }}
       className="text-center"
     >
@@ -293,6 +292,7 @@ const Mission = () => {
                 opacity: 1,
                 display: "inline-flex", // Aligns text and arrow in one line
                 alignItems: "center",
+                boxShadow: "none",
               }}
               onClick={handleReadMore}
             >
@@ -300,6 +300,7 @@ const Mission = () => {
               <span
                 style={{
                   marginLeft: "0.5rem",
+                  marginBottom: "0.5rem",
                   display: "inline-block",
                   transform: expanded ? "rotate(-135deg)" : "rotate(45deg)", // Rotate arrow up when expanded
                   border: "solid #463F2F",
@@ -526,6 +527,7 @@ const Mission = () => {
                   maturity.
                 </Card.Text>
                 <Button
+                  className="btn btn-success"
                   style={{
                     color: "#ffffff",
                     backgroundColor: "#463f2f",

@@ -18,10 +18,9 @@ const MFire = () => {
           <Container>
             <Card.Body
               style={{
-                margin: "2rem 2rem 4rem 1rem",
+                margin: "2rem 2rem 2rem 1rem",
               }}
             >
-              {/* <Row className={isMobile ? "text-center" : ""}> */}
               <Row className={`${isMobile ? "text-center  " : ""}`}>
                 {/* Mobile screens */}
                 <Col
@@ -30,6 +29,7 @@ const MFire = () => {
                   className={
                     isMobile ? "d-flex flex-column align-items-center" : ""
                   }
+                  style={{ margin: "2rem 0" }}
                 >
                   <Card.Title
                     className="text-2xl"
@@ -42,9 +42,6 @@ const MFire = () => {
                       letterSpacing: "0px",
                       opacity: 1,
                       margin: "1rem 0 0 0",
-                      //padding: "0.7rem",
-                      // margin: "0.5rem",
-                      // padding: "0.5rem",
                     }}
                   >
                     Ministry
@@ -53,19 +50,12 @@ const MFire = () => {
                     style={{
                       color: "#463F2F",
                       fontFamily: "Inter, sans-serif",
-                      // fontSize: "2rem",
                       fontWeight: 600,
                       lineHeight: "1.2",
                       letterSpacing: "0px",
                       opacity: 1,
-                      //   margin: "0 1rem 2rem 1.2rem",
-                      //   padding: "0.7rem",
                       margin: "1rem 0 0 0",
-                      //padding: "0.7rem",
                       fontSize: "1.5rem",
-
-                      // margin: "0.5rem",
-                      // padding: "0.5rem",
                     }}
                   >
                     F.I.R.E.
@@ -80,13 +70,7 @@ const MFire = () => {
                       lineHeight: "1.5",
                       letterSpacing: "0px",
                       opacity: 1,
-                      //   margin: "0 1rem 2rem 1.2rem",
                       margin: "1rem 0 0 0",
-                      //padding: "0.7rem",
-                      // padding: "0.7rem",
-
-                      // margin: "0.5rem",
-                      // padding: "0.5rem",
                     }}
                   >
                     Fivefold ministry: Inspiring believers to passionately
@@ -102,15 +86,15 @@ const MFire = () => {
                   xs={12}
                   md={6}
                   className="d-flex justify-content-center align-items-center "
-                  style={{}}
+                  style={{ margin: "2rem 0" }}
                 >
                   <Card
                     style={{
                       width: "100%",
                       background: "transparent",
                       border: "none",
-                      padding: "0",
-                      margin: "0",
+                      padding: "0 ",
+                      margin: "0 ",
                     }}
                   >
                     <div

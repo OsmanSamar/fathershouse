@@ -52,7 +52,6 @@ const Ministry = () => {
                       opacity: 1,
                       marginTop: "1rem",
                       marginBottom: "3rem",
-                      // padding: "0.75rem",
                     }}
                   >
                     The Ministry
@@ -66,8 +65,6 @@ const Ministry = () => {
                       lineHeight: "1.5",
                       letterSpacing: "0px",
                       opacity: 1,
-                      //   marginTop: "1rem",
-                      //   marginBottom: "2rem",
                       padding: "0.75rem",
                     }}
                   >
@@ -83,6 +80,7 @@ const Ministry = () => {
                       background: "transparent",
                       border: "none",
                       padding: " 2rem 0.5rem 5rem 0.5rem",
+                      boxShadow: "none",
                     }}
                   >
                     <Card.Img
@@ -104,6 +102,7 @@ const Ministry = () => {
                       margin: "auto",
                       width: "60%",
                       padding: " 2rem 0.5rem 5rem 0.5rem",
+                      boxShadow: "none",
                     }}
                   >
                     <Card.Img

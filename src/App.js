@@ -5,13 +5,13 @@ import Hero from "./components/Hero";
 import MFire from "./components/MFire";
 import Ministry from "./components/Ministry";
 import Mission from "./components/Mission";
-import Test from "./components/Test";
 import TestimonialsSlider from "./components/TestimonialsSlider";
 import Videosection from "./components/Videosection";
 
 function App() {
   return (
     <div className="App">
+      {/* <Spinner animation="grow" /> */}
       <FNavbar />
       <Hero />
       <Videosection />

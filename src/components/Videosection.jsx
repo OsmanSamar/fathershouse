@@ -85,6 +85,7 @@ const Videosection = () => {
             >
               {!isMobile && (
                 <Button
+                  className="btn btn-success"
                   style={{
                     color: "#463F2F",
                     backgroundColor: "#F49640",
