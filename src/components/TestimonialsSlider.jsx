@@ -100,21 +100,29 @@ const TestimonialsSlider = () => {
                     borderRadius: "0.375rem",
                     marginBottom: "2rem",
                   }}
-                  className="animate__animated animate__zoomIn"
+                  //   className="animate__animated animate__zoomIn"
                 >
-                  <Image
-                    src={Avatar}
-                    alt={`Avatar ${cardId}`}
-                    className="center  "
-                    style={{
-                      position: "absolute",
-                      height: "250px",
-                      top: "-86px",
-                      left: "50%",
-                      transform: "translate(-50%)",
-                    }}
-                    fluid
-                  />
+                  <div
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                  >
+                    <Image
+                      src={Avatar}
+                      alt={`Avatar ${cardId}`}
+                      className="center  "
+                      style={{
+                        position: "absolute",
+                        height: "250px",
+                        top: "-86px",
+                        left: "50%",
+                        transform: "translate(-50%)",
+                      }}
+                      fluid
+                    />
+                  </div>
                 </div>
                 <MDBCardBody className="text-center text-md-start">
                   <MDBCardTitle

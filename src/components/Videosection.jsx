@@ -155,7 +155,15 @@ const Videosection = () => {
             <Row className={isMobile ? "g-4" : "g-3"}>
               {(isMobile ? mobileVideos : videos).map((video) => (
                 <Col key={video.id} xs={12} sm={6} md={4}>
-                  <div className="position-relative animate__animated animate__rotateInUpRight">
+                  <div
+                    //  animate__animated animate__rotateInUpRight
+                    className="position-relative     "
+                    data-aos="flip-right"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                  >
                     {video.youtube && (
                       <div
                         style={{
