@@ -49,7 +49,10 @@ const Endorsements = () => {
               src={Logo}
               alt="Logo"
               style={{
-                width: "150px",
+                height: "150px",
+                width: "100%",
+                padding: "30px",
+                objectFit: "contain",
               }}
             />
           </Col>
@@ -58,7 +61,11 @@ const Endorsements = () => {
               src={Logo}
               alt="Logo"
               style={{
-                width: "150px",
+                //width: "150px",
+                height: "150px",
+                width: "100%",
+                padding: "30px",
+                objectFit: "contain",
               }}
             />
           </Col>
@@ -67,7 +74,11 @@ const Endorsements = () => {
               src={Logo}
               alt="Logo"
               style={{
-                width: "150px",
+                // width: "150px",
+                height: "150px",
+                width: "100%",
+                padding: "30px",
+                objectFit: "contain",
               }}
             />
           </Col>
@@ -76,7 +87,11 @@ const Endorsements = () => {
               src={Logo}
               alt="Logo"
               style={{
-                width: "150px",
+                // width: "150px",
+                height: "150px",
+                width: "100%",
+                padding: "30px",
+                objectFit: "contain",
               }}
             />
           </Col>
@@ -91,7 +106,11 @@ const Endorsements = () => {
               src={Logo}
               alt="Logo"
               style={{
-                width: "150px",
+                //  width: "150px",
+                height: "150px",
+                width: "100%",
+                padding: "30px",
+                objectFit: "contain",
               }}
             />
           </Col>
@@ -100,7 +119,11 @@ const Endorsements = () => {
               src={Logo}
               alt="Logo"
               style={{
-                width: "150px",
+                // width: "150px",
+                height: "150px",
+                width: "100%",
+                padding: "30px",
+                objectFit: "contain",
               }}
             />
           </Col>

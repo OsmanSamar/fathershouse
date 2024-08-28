@@ -218,29 +218,33 @@ const Footer = () => {
             <Row className="g-2 align-items-center">
               <Col
                 xs={12}
-                md={4}
-                className="text-center text-md-center text-lg-start"
+                md={5}
+                className="text-center text-md-start text-lg-start"
               >
-                <p
+                <div
+                  className="text-center text-md-start"
                   style={{
-                    textAlign: "inherit",
+                    // textAlign: "inherit",
+                    // textAlign: "left",
                     color: "#463F2F",
                     lineHeight: "1.2",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: 600,
+                    fontWeight: 500,
                     letterSpacing: "0px",
                     opacity: 1,
                     margin: "0 0.1rem 1rem 0",
-                    fontSize: "calc(0.5rem + 1vw)",
+                    padding: "0 1rem",
+
+                    fontSize: "calc(0.875rem + 1vw)",
                   }}
                 >
-                  Questions?
-                </p>
+                  <p>Questions?</p>
+                </div>
               </Col>
               <Col
                 xs={12}
-                md={6}
-                className="text-center text-md-center text-lg-start"
+                md={5}
+                className="text-center text-md-start text-lg-start"
               >
                 <input
                   type="text"
@@ -257,10 +261,12 @@ const Footer = () => {
                     letterSpacing: "0px",
                     fontSize: "0.75rem",
                     opacity: 1,
-                    margin: "0 0 1rem 0",
-                    width: "100%",
-                    maxWidth: "100%",
+                    //margin: "0 0 1rem 0",
+                    // width: "100%",
+                    // maxWidth: "100%",
+                    objectFit: "contain",
                     boxSizing: "border-box",
+                    margin: "0 0.1rem 1rem 0",
                   }}
                 />
               </Col>
@@ -270,8 +276,9 @@ const Footer = () => {
           <div
             style={{
               borderBottom: "1px solid #463F2F",
-              width: "110%",
-              margin: "2rem 0",
+              marginLeft: "-2rem",
+              marginRight: "-2rem",
+              width: "calc(100% + 4rem)",
             }}
           ></div>
 
@@ -377,6 +384,7 @@ const Footer = () => {
                   fontSize: "0.75rem",
                   letterSpacing: "0px",
                   opacity: 1,
+                  textTransform: "none",
                   transform: isClicked
                     ? "scale(0.95)"
                     : isHovered

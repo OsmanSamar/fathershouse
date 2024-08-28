@@ -115,8 +115,8 @@ const Videosection = () => {
                     border: "none",
                     padding: "7px ",
                     height: "42px",
-                    width: "200px",
-                    maxWidth: "100%",
+                    // width: "100px",
+                    //maxWidth: "100%",
                     textAlign: "center",
                     fontSize: "0.75rem",
                     fontFamily: "Inter, sans-serif",
@@ -125,6 +125,7 @@ const Videosection = () => {
                     opacity: 1,
                     marginTop: "3rem",
                     marginBottom: "2rem",
+                    textTransform: "none",
                     transform: isClicked
                       ? "scale(0.95)"
                       : isHovered
@@ -234,6 +235,7 @@ const Videosection = () => {
                   opacity: 1,
                   marginTop: "2rem ",
                   marginBottom: "4rem",
+                  textTransform: "none",
                 }}
               >
                 Watch more video's

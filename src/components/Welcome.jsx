@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "../welcomestyle.css";
+//import "../welcomestyle.css";
+
 const Welcome = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
@@ -25,6 +26,23 @@ const Welcome = () => {
     };
   }, []);
 
+  const circleStyle = {
+    position: "fixed",
+    top: isVisible ? "50px" : "-200px",
+    left: "50%",
+    transform: "translateX (-50%)",
+    width: "200px",
+    height: "200px",
+    backgroundColor: fadeOut ? "rgba(0, 0, 0, 0.8)" : "rgba(0, 0, 0, 0.4)",
+    borderRadius: "50%",
+    display: "flex",
+    alignItems: "center",
+    juistfiyContent: "center",
+    opacity: fadeOut ? 0 : isVisible ? 1 : 0,
+    transition: "top 1.5s ease-out, opacity 1.5s ease-out",
+    zIndex: 1000,
+  };
+
   /* Overlay to create the freezing effect */
   const overlayStyle = {
     position: "fixed",
@@ -38,10 +56,12 @@ const Welcome = () => {
     zIndex: 999, // Ensure the overlay is behind the circle
     pointerEvents: "none", // Allow clicks through the overlay
   };
+
   return (
     <div style={overlayStyle}>
-      <div>
-        <div id="wrapper">
+      <div style={{ circleStyle }}>
+        <p>Welcome back to Father's home</p>
+        {/* <div id="wrapper">
           <div class="profile-main-loader">
             <div class="loader">
               <svg class="circular-loader" viewBox="25 25 50 50">
@@ -57,7 +77,7 @@ const Welcome = () => {
               </svg>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -82,7 +82,12 @@ const Ministry = () => {
                       padding: " 2rem 0.5rem 5rem 0.5rem",
                       boxShadow: "none",
                     }}
-                    className="animate__animated animate__rollIn"
+                    // className="animate__animated animate__rollIn"
+                    data-aos="flip-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
                   >
                     <Card.Img
                       src={MinistryMobile}

@@ -16,20 +16,20 @@ const MFire = () => {
           }}
         >
           <Container>
-            <Card.Body
-              style={{
-                margin: "2rem 2rem 2rem 1rem",
-              }}
-            >
-              <Row className={`${isMobile ? "text-center  " : ""}`}>
+            <Card.Body style={{ margin: "2rem 2rem 2rem 2rem" }}>
+              <Row>
+                {/* xs={1} md={2} */}
+                {/* className={`${isMobile ? "text-center  " : ""}`} */}
                 {/* Mobile screens */}
                 <Col
                   xs={12}
+                  sm={12}
                   md={6}
+                  lg={6}
+                  style={{ margin: "2rem 0" }}
                   className={
                     isMobile ? "d-flex flex-column align-items-center" : ""
                   }
-                  style={{ margin: "2rem 0" }}
                 >
                   <Card.Title
                     className="text-2xl"
@@ -70,7 +70,7 @@ const MFire = () => {
                       lineHeight: "1.5",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "1rem 0 0 0",
+                      margin: "2.5rem 0 0 0",
                     }}
                   >
                     Fivefold ministry: Inspiring believers to passionately
@@ -84,9 +84,14 @@ const MFire = () => {
                 {/*  medium and larger screens */}
                 <Col
                   xs={12}
+                  sm={12}
                   md={6}
+                  //  md={{ span: 6, offset: 1 }}
+                  lg={6}
                   className="d-flex justify-content-center align-items-center "
-                  style={{ margin: "2rem 0" }}
+                  style={{
+                    margin: "3rem 0 ",
+                  }}
                 >
                   <Card
                     style={{

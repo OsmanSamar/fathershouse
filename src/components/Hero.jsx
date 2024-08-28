@@ -16,6 +16,7 @@ const Hero = () => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
+          minHeight: "70vh",
         }}
       >
         {/* Dark Overlay */}
@@ -89,11 +90,12 @@ const Hero = () => {
                     padding: "0.5rem 0.5rem", //padding to make buttons the same size
                     minWidth: "120px", // Ensure minimum width is the same
                     textAlign: "center",
-                    fontSize: "1rem",
-                    fontFamily: "inter, semibold",
-                    fontWeight: 600,
+                    fontSize: "0.875rem",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: 500,
                     letterSpacing: "0px", // default spacing.
                     opacity: "1",
+                    textTransform: "none",
                   }}
                 >
                   Our mission
@@ -108,11 +110,12 @@ const Hero = () => {
                     padding: "0.5rem 0.5rem",
                     minWidth: "120px",
                     textAlign: "center",
-                    fontSize: "1rem",
-                    fontFamily: "inter, semibold",
-                    fontWeight: 600,
+                    fontSize: "0.875rem",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: 500,
                     letterSpacing: "0px",
                     opacity: "1",
+                    textTransform: "none",
                   }}
                 >
                   The team

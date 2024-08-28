@@ -46,7 +46,7 @@ const TestimonialsSlider = () => {
               fontFamily: "Inter, sans-serif",
               fontSize: "1.5rem",
               fontWeight: "400",
-              padding: " 2rem 0 0.5rem 0",
+              padding: " 5rem 0 0.5rem 0",
             }}
           >
             Father’s House
@@ -70,7 +70,7 @@ const TestimonialsSlider = () => {
               fontFamily: "Inter, sans-serif",
               fontSize: "0.875rem",
               fontWeight: "500",
-              padding: "10px 15% 2em 15% ",
+              padding: "10px 15% 4rem 15% ",
             }}
           >
             The core team of the Father’s House includes individuals with
@@ -182,6 +182,7 @@ const TestimonialsSlider = () => {
                         opacity: 1,
                         alignItems: "center",
                         boxShadow: "none",
+                        textTransform: "none",
                         display: isSmallScreen ? "inline-flex" : "none",
                       }}
                       onClick={() => handleReadMore(cardId)}
@@ -198,6 +199,7 @@ const TestimonialsSlider = () => {
                           border: "solid #463F2F",
                           borderWidth: "0 0.1rem 0.1rem 0",
                           padding: "0.25rem",
+                          textTransform: "none",
                         }}
                       ></span>
                     </Button>

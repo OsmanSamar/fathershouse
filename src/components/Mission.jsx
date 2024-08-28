@@ -53,7 +53,7 @@ const Mission = () => {
         {isSmallScreen ? (
           <>
             {/* Display only the first three texts on small screens */}
-            <Card.Text
+            {/* <Card.Text
               style={{
                 color: "#463F2F",
                 fontFamily: "Inter, sans-serif",
@@ -62,6 +62,40 @@ const Mission = () => {
                 letterSpacing: "0px",
                 opacity: 1,
                 margin: "2rem 3rem 0 3rem",
+              }}
+            >
+              Our mission is to{" "}
+              <span
+                style={{
+                  fontWeight: "bold",
+                }}
+              >
+                activate, empower and mobilize
+              </span>{" "}
+              believers through the fivefold ministry, inspiring them to
+              passionately pursue God’s purpose for Israël, reconcile Jews and
+              Gentiles, and{" "}
+              <span
+                style={{
+                  fontWeight: "bold",
+                }}
+              >
+                live victoriously in the abundant grace of God.
+              </span>{" "}
+            </Card.Text> */}
+
+            <Card.Text
+              style={{
+                color: "#463F2F",
+                fontFamily: "Inter, sans-serif",
+                fontSize: "1rem",
+                lineHeight: "1.2",
+                letterSpacing: "0px",
+                opacity: 1,
+                // margin: "2rem 3rem 0 3rem",
+                // width: "84%",
+                margin: "2rem auto 0 auto",
+                width: "92.5%",
               }}
             >
               Our mission is to{" "}
@@ -92,6 +126,10 @@ const Mission = () => {
                   marginTop: "4rem",
                   marginBottom: "4rem",
                   paddingTop: "1rem",
+                  width: "100vw",
+                  position: "relative",
+                  left: "50%",
+                  transform: "translateX(-50%)",
                 }}
               ></div>
             )}
@@ -105,7 +143,7 @@ const Mission = () => {
                 letterSpacing: "0px",
                 opacity: 1,
                 margin: "1rem 1rem 2rem 1.2rem",
-                padding: "0.7rem",
+                //  padding: "2.5rem 0",
                 textAlign: "left",
               }}
             >
@@ -134,7 +172,7 @@ const Mission = () => {
                 letterSpacing: "0px",
                 opacity: 1,
                 margin: "1rem 1rem 2rem 1.2rem",
-                padding: "0.7rem",
+                //  padding: "2.5rem 0",
                 textAlign: "left",
               }}
             >
@@ -158,10 +196,11 @@ const Mission = () => {
               style={{
                 color: "#463F2F",
                 fontFamily: "Inter, sans-serif",
-                fontSize: "1rem",
-                lineHeight: "1.5",
+                fontSize: "0.875rem",
+                lineHeight: "1.5rem",
                 letterSpacing: "0px",
-                padding: "0.7rem",
+                // padding: "0.7rem",
+                //padding: "2.5rem 0",
                 textAlign: "left",
                 opacity: expanded ? 1 : 0.7, // Full opacity when expanded
                 margin: "1rem 1rem 2rem 1.2rem",
@@ -201,11 +240,12 @@ const Mission = () => {
                     color: "#463F2F",
                     fontFamily: "Inter, sans-serif",
                     fontSize: "0.875rem",
-                    lineHeight: "1.5",
+                    lineHeight: "1.5rem",
                     letterSpacing: "0px",
                     opacity: 1,
                     margin: "1rem 1rem 1rem 1.2rem",
-                    padding: "0.7rem",
+                    // padding: "0.7rem",
+                    // padding: "2.5rem 0",
                     textAlign: "left",
                   }}
                 >
@@ -235,11 +275,12 @@ const Mission = () => {
                     color: "#463F2F",
                     fontFamily: "Inter, sans-serif",
                     fontSize: "0.875rem",
-                    lineHeight: "1.5",
+                    lineHeight: "1.5rem",
                     letterSpacing: "0px",
                     opacity: 1,
                     margin: "1rem 1rem 1rem 1.2rem",
-                    padding: "0.7rem",
+                    // padding: "0.7rem",
+                    // padding: "2.5rem 0",
                     textAlign: "left",
                   }}
                 >
@@ -296,6 +337,7 @@ const Mission = () => {
                 display: "inline-flex", // Aligns text and arrow in one line
                 alignItems: "center",
                 boxShadow: "none",
+                textTransform: "none",
               }}
               onClick={handleReadMore}
             >
@@ -325,9 +367,10 @@ const Mission = () => {
                 letterSpacing: "0px",
                 opacity: 1,
                 margin: "2rem auto 0 auto",
-                width: "49%",
+                width: "48%",
               }}
             >
+              {}
               Our mission is to{" "}
               <span
                 style={{
@@ -365,7 +408,9 @@ const Mission = () => {
                     letterSpacing: "0px",
                     opacity: 1,
                     margin: "1rem 1rem 1rem 1.2rem",
-                    padding: "0.7rem",
+                    // padding: "0.7rem",
+                    padding: "0.5rem 0",
+                    textAlign: "left",
                   }}
                 >
                   Central to our mission is the call to inspire believers to
@@ -393,7 +438,8 @@ const Mission = () => {
                     letterSpacing: "0px",
                     opacity: 1,
                     margin: "1rem 1rem 1rem 1.2rem",
-                    padding: "0.7rem",
+                    //  padding: "0.7rem",
+                    padding: "0.5rem 0",
                     textAlign: "left",
                   }}
                 >
@@ -422,7 +468,8 @@ const Mission = () => {
                     letterSpacing: "0px",
                     opacity: 1,
                     margin: "1rem 1rem 1rem 1.2rem",
-                    padding: "0.7rem",
+                    // padding: "0.7rem",
+                    padding: "0.5rem 0",
                     textAlign: "left",
                   }}
                 >
@@ -456,7 +503,8 @@ const Mission = () => {
                     letterSpacing: "0px",
                     opacity: 1,
                     margin: "1rem 1rem 1rem 1.2rem",
-                    padding: "0.7rem",
+                    padding: "0.5rem 0",
+                    // padding: "2.5rem 0",
                     textAlign: "left",
                   }}
                 >
@@ -490,7 +538,8 @@ const Mission = () => {
                     letterSpacing: "0px",
                     opacity: 1,
                     margin: "1rem 1rem 3rem 1.2rem",
-                    padding: "0.7rem",
+                    // padding: "0.7rem",
+                    padding: "0.5rem 0",
                     textAlign: "left",
                   }}
                 >
@@ -545,6 +594,7 @@ const Mission = () => {
                     letterSpacing: "0px",
                     opacity: 1,
                     marginLeft: "2rem",
+                    textTransform: "none",
                     transform: isClicked
                       ? "scale(0.95)"
                       : isHovered

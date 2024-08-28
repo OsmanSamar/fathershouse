@@ -52,7 +52,8 @@ const FNavbar = () => {
 
         <Navbar.Collapse
           id="basic-navbar-nav"
-          className="justify-content-center"
+          className="justify-content-center "
+          //  style={{ height: "100vh", padding: "100px 0" }}
         >
           <Nav
             className="text-center "
@@ -63,12 +64,7 @@ const FNavbar = () => {
               fontWeight: 500,
             }}
           >
-            <Nav.Link
-              href="#watch"
-              style={{
-                margin: "0 1rem",
-              }}
-            >
+            <Nav.Link href="#watch" style={{ margin: "0 1rem" }}>
               <Link to="watch" smooth={true} duration={500}>
                 Watch
               </Link>

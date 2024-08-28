@@ -9,7 +9,7 @@ import TestimonialsSlider from "./components/TestimonialsSlider";
 import Videosection from "./components/Videosection";
 import "animate.css";
 import Welcome from "./components/Welcome";
-import AnimatedCursor from "react-animated-cursor";
+//import AnimatedCursor from "react-animated-cursor";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,13 +26,13 @@ function App() {
   });
   return (
     <>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         outerSize={8}
         color="244, 150, 60"
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={5}
-      />
+      /> */}
       <div>
         <Welcome />
         <FNavbar />
