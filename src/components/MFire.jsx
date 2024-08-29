@@ -11,28 +11,34 @@ const MFire = () => {
         <div
           style={{
             backgroundColor: "#F49640",
-            width: "100vw",
+            // width: "100vw",
+            width: "100%",
             padding: "2rem 0",
           }}
         >
           <Container>
-            <Card.Body style={{ margin: "2rem 2rem 2rem 2rem" }}>
-              <Row>
+            <Card.Body style={{ padding: "2rem 0" }}>
+              {/* style={{ margin: "2rem 2rem 2rem 2rem" }} */}
+              <Row className="g-4">
                 {/* xs={1} md={2} */}
                 {/* className={`${isMobile ? "text-center  " : ""}`} */}
                 {/* Mobile screens */}
                 <Col
                   xs={12}
                   sm={12}
-                  md={6}
-                  lg={6}
-                  style={{ margin: "2rem 0" }}
-                  className={
-                    isMobile ? "d-flex flex-column align-items-center" : ""
-                  }
+                  md={5}
+                  // lg={4}
+                  //  style={{ margin: "2rem 0" }}
+                  // className={
+                  //   isMobile ? "d-flex flex-column align-items-center" : ""
+                  // }
+                  className={`d-flex flex-column ${
+                    isMobile ? "text-center" : ""
+                  }`}
+                  style={{ padding: "3rem" }} //
                 >
                   <Card.Title
-                    className="text-2xl"
+                    //   className="text-2xl"
                     style={{
                       color: "#FFFFFF",
                       fontFamily: "Inter, sans-serif",
@@ -84,14 +90,15 @@ const MFire = () => {
                 {/*  medium and larger screens */}
                 <Col
                   xs={12}
-                  sm={12}
-                  md={6}
+                  // sm={12}
+                  md={7}
                   //  md={{ span: 6, offset: 1 }}
-                  lg={6}
+                  lg={7}
                   className="d-flex justify-content-center align-items-center "
-                  style={{
-                    margin: "3rem 0 ",
-                  }}
+                  // style={{
+                  //   margin: "3rem 0 ",
+                  // }}
+                  style={{ padding: "2rem" }}
                 >
                   <Card
                     style={{
@@ -108,7 +115,7 @@ const MFire = () => {
                         paddingBottom: "56.25%" /* 16:9 Aspect Ratio */,
                         height: 0,
                         overflow: "hidden",
-                        maxWidth: "100%",
+                        //  maxWidth: "100%",
                         borderRadius: "8px",
                       }}
                       //animate__animated animate__rotateInUpRight

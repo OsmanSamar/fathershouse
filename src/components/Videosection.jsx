@@ -9,16 +9,17 @@ const Videosection = () => {
   const [isClicked, setIsClicked] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
 
+  // Video arrays
   const mobileVideos = [
-    { id: 1, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
-    { id: 2, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
-    { id: 3, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
+    { id: 1, youtube: "tz4dWkR_cbw", title: "Zomergroeten.. " },
+    { id: 2, youtube: "PwZtiFChmE8", title: "Oproep burgemeester " },
+    { id: 3, youtube: "DByV5vtJEVA", title: "Burgemeester TK2023 " },
   ];
 
   const videos = [
-    { id: 1, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
-    { id: 2, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
-    { id: 3, youtube: "tz4dWkR_cbw", title: "Marcel Gaasenbeek" },
+    { id: 1, youtube: "tz4dWkR_cbw", title: "Zomergroeten.." },
+    { id: 2, youtube: "PwZtiFChmE8", title: "Oproep burgemeester " },
+    { id: 3, youtube: "DByV5vtJEVA", title: "Burgemeester TK2023 " },
   ];
 
   return (
@@ -178,6 +179,7 @@ const Videosection = () => {
                         <iframe
                           src={`https://www.youtube.com/embed/${video.youtube}`}
                           title={video.title}
+                          // title="YouTube video player"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                           referrerPolicy="strict-origin-when-cross-origin"
@@ -194,11 +196,13 @@ const Videosection = () => {
                         ></iframe>
                       </div>
                     )}
-                    <h6
+                    {/* <h6
                       className="position-absolute"
                       style={{
-                        backgroundColor: "#FFFFFF",
-                        color: "#463F2F",
+                        //backgroundColor: "#FFFFFF",
+                        backgroundColor: "transparent",
+                        //color: "#463F2F",
+                        color: "#FFFFFF",
                         borderRadius: "7px",
                         boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
                         bottom: "20px",
@@ -208,7 +212,7 @@ const Videosection = () => {
                       }}
                     >
                       {video.title}
-                    </h6>
+                    </h6> */}
                   </div>
                 </Col>
               ))}

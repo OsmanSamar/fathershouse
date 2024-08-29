@@ -1,0 +1,184 @@
+/* #wrapper { */
+/* position: relative; */
+/*     background:#333; */
+/* height: 100%;
+} */
+
+/* .profile-main-loader {
+  position: fixed;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  z-index: 9000;
+  transition: opacity 1.5s ease-out; */
+/* margin-left: -100px;
+  position: fixed !important;
+  
+  margin-top: -100px;
+  width: 45px;
+  z-index: 9000 !important; */
+/* }
+.profile-main-loader.fade-out {
+  opacity: 0;
+} */
+
+/* .profile-main-loader .loader {
+  position: relative;
+  width: 100%;
+  height: 100%; */
+/* margin: 0px auto;
+  width: 200px;
+  height: 200px; */
+/* }
+.profile-main-loader .loader:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+} */
+
+/* .circular-loader { */
+/* -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto; */
+
+animation: rotate 2s linear infinite;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+margin: auto;
+/* } */
+
+/* .loader-path {
+  stroke-dasharray: 150, 200;
+  stroke-dashoffset: -10;
+  -webkit-animation: dash 1.5s ease-in-out infinite,
+    color 6s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+} */
+
+/* @-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+} */
+/* @-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124;
+  }
+}
+
+@-webkit-keyframes color {
+  0% { */
+/* stroke: #70c542; */
+
+/* stroke: #f49640;
+  }
+  40% {
+    stroke: #f49640;
+  }
+  66% {
+    stroke: #f49640;
+  }
+  80%,
+  90% {
+    stroke: #f49640;
+  }
+} */
+/* @keyframes color {
+  0% {
+    stroke: #f49640;
+  }
+  40% {
+    stroke: #f49640;
+  }
+  66% {
+    stroke: #f49640;
+  }
+  80%,
+  90% {
+    stroke: #f49640;
+  }
+} */
+
+#wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.dot-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px; /* Width of the dot container */
+  height: 20px; /* Height of the dot container */
+  z-index: 9000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 1.5s ease-out;
+}
+
+.dot-loader.fade-out {
+  opacity: 0;
+}
+
+.dot {
+  width: 15px; /* Size of each dot */
+  height: 15px;
+  background-color: #f49640;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.dot:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
