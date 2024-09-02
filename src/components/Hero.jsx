@@ -61,14 +61,22 @@ const Hero = () => {
                 className="animate__animated animate__backInUp"
                 style={{
                   fontSize: "clamp(1.5rem, 2.6vw + 1rem, 4rem)", //clamp for responsiveness
+
                   fontFamily: "Inter, sans-serif",
                   fontWeight: 600,
                   lineHeight: "1.2",
                   textAlign: "center",
-                  padding: "0 2rem", // Default padding
+                  // padding: "0 0.5rem",
+                  marginRight: "1rem",
+                  marginLeft: "1rem",
                   letterSpacing: "0px",
                   opacity: 1,
                 }}
+                data-aos="flip-up"
+                data-aos-offset="200"
+                data-aos-delay="10"
+                data-aos-duration="1000"
+                data-aos-easing="ease-out-cubic"
               >
                 Building God’s family and helping Jews and Gentiles to find a
                 home in the Father’s House
@@ -87,7 +95,7 @@ const Hero = () => {
                     backgroundColor: "white",
                     color: "#463F2F",
                     border: "none",
-                    padding: "0.5rem 0.5rem", //padding to make buttons the same size
+                    padding: "0.6rem 0.6rem", //padding to make buttons the same size
                     minWidth: "120px", // Ensure minimum width is the same
                     textAlign: "center",
                     fontSize: "0.875rem",
@@ -107,7 +115,7 @@ const Hero = () => {
                     backgroundColor: "white",
                     color: "#463F2F",
                     border: "none",
-                    padding: "0.5rem 0.5rem",
+                    padding: "0.6rem 0.6rem",
                     minWidth: "120px",
                     textAlign: "center",
                     fontSize: "0.875rem",

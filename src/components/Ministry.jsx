@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import Bggroup from "../assets/Group29@.png";
 import MinistryMobile from "../assets/Group 63.svg";
-import MinistryDesktop from "../assets/Group 62.svg";
+import MinistryDesktop from "../assets/ministrydesktop.svg";
 import { useMediaQuery } from "react-responsive";
 
 const Ministry = () => {
@@ -111,7 +111,9 @@ const Ministry = () => {
                       boxShadow: "none",
                     }}
                     // className="animate__animated animate__rollIn"
-                    data-aos="flip-up"
+                    // data-aos="flip-up"
+
+                    data-aos="fade-up"
                     data-aos-offset="200"
                     data-aos-delay="50"
                     data-aos-duration="1000"

@@ -81,7 +81,7 @@ const TestimonialsSlider = () => {
       </Container>
       {/* End of Header Section */}
       {/* Begin of Testimonials */}
-      <Container className="p-4 p-sm-auto p-md-3 p-lg-7">
+      <Container className="p-4 p-sm-auto p-md-5 p-lg-7">
         <MDBRow>
           {[1, 2, 3].map((cardId) => (
             <MDBCol sm="12" md="6" lg="4" className="mb-9" key={cardId}>
@@ -98,7 +98,8 @@ const TestimonialsSlider = () => {
                     position: "relative",
                     height: "164px",
                     borderRadius: "0.375rem",
-                    marginBottom: "2rem",
+                    marginBottom: "1rem",
+                    // marginTop: "1rem",
                   }}
                   //   className="animate__animated animate__zoomIn"
                 >
@@ -124,7 +125,10 @@ const TestimonialsSlider = () => {
                     />
                   </div>
                 </div>
-                <MDBCardBody className="text-center text-md-start">
+                <MDBCardBody
+                  className="text-center text-md-start"
+                  style={{ padding: "0.5rem" }}
+                >
                   <MDBCardTitle
                     className=" animate__animated animate__zoomInRight"
                     style={{
@@ -132,7 +136,8 @@ const TestimonialsSlider = () => {
                       lineHeight: "1.2",
                       fontFamily: "Inter, sans-serif",
                       fontWeight: "300",
-                      padding: "0.1rem",
+                      // padding: "0.1rem",
+                      marginTop: "0.5rem",
                     }}
                   >
                     {cardId === 1
@@ -175,6 +180,8 @@ const TestimonialsSlider = () => {
                         backgroundColor: "transparent",
                         border: "none",
                         padding: "0",
+                        marginBottom: "2rem",
+                        marginTop: "0.5rem",
                         fontSize: "0.75rem",
                         fontFamily: "Inter, sans-serif",
                         fontWeight: 600,

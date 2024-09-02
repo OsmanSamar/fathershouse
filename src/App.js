@@ -38,7 +38,7 @@ function App() {
         outerScale={5}
         style={{
           position: "fixed",
-          zIndex: 9999, // Make sure it appears behind the actual cursor
+          zIndex: 9999, //To  make sure it appears behind the actual cursor
           pointerEvents: "none", // Prevents cursor from blocking other elements
           top: 0,
           left: 0,

@@ -48,7 +48,8 @@ function WelcomeBack() {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.3)", // Slightly transparent overlay
+    backgroundColor: "rgba(0, 0, 0, 1)",
+    //backgroundColor: "rgba(0, 0, 0, 0.3)", // Slightly transparent overlay
     opacity: fadeOut ? 0 : 0.7, // Fades to 0 when the circle starts fading out
     transition: "opacity 1.5s ease-out",
     zIndex: 999, // Ensure the overlay is behind the circle
@@ -58,7 +59,7 @@ function WelcomeBack() {
 
   return (
     <div>
-      {/* Overlay to create the freezing effect */}
+      {/* Overlay  effect */}
       <div style={overlayStyle}></div>
 
       {/* Animated Circle */}

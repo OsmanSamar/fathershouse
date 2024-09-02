@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "react-bootstrap";
+//import { Button } from "react-bootstrap";
 import { FaArrowAltCircleDown, FaArrowAltCircleUp } from "react-icons/fa";
 
 const ScrollButton = () => {
@@ -36,7 +36,7 @@ const ScrollButton = () => {
   };
 
   return (
-    <Button
+    <div
       variant="primary"
       onClick={handleClick}
       style={{
@@ -45,16 +45,25 @@ const ScrollButton = () => {
         right: "20px",
         zIndex: 1000,
         backgroundColor: "transparent",
+        color: "none",
         border: "none",
         padding: 0,
       }}
     >
       {isAtTop ? (
-        <FaArrowAltCircleDown size={26} />
+        <FaArrowAltCircleDown
+          size={26}
+          color="#463F2F"
+          backgroundColor="#FFFFFF"
+        />
       ) : (
-        <FaArrowAltCircleUp size={26} />
+        <FaArrowAltCircleUp
+          size={26}
+          color="#463F2F"
+          backgroundColor="#FFFFFF"
+        />
       )}
-    </Button>
+    </div>
   );
 };
 

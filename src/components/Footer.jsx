@@ -10,11 +10,12 @@ const Footer = () => {
     <Container fluid style={{ padding: 0, borderTop: "1px solid #463F2F" }}>
       <Row className=" g-0">
         {/* Left Column with Background Image and Text Card */}
+
         <Col
           xs={12}
           sm={12}
           md={6}
-          lg={6}
+          lg={7}
           style={{
             backgroundImage: `url(${Bggroup})`,
             backgroundSize: "cover",
@@ -27,111 +28,232 @@ const Footer = () => {
             padding: "2rem",
           }}
         >
-          <Card
+          <Container
+            className="d-none d-md-flex"
             style={{
-              backgroundColor: "#FFFFFF",
+              width: "533px",
               maxWidth: "100%",
-              borderRadius: "8px",
-              border: "1px solid #463F2F",
+              marginRight: "0.5rem",
+              marginLeft: "0.5rem",
+              // marginRight: "1rem",
             }}
           >
-            <Card.Body>
-              <Card.Title
-                style={{
-                  textAlign: "left",
-                  color: "#463F2F",
-                  lineHeight: "1.2",
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: 600,
-                  letterSpacing: "0px",
-                  opacity: 1,
-                  margin: "2rem 0 2rem 2rem",
-                }}
-              >
-                Donations
-              </Card.Title>
-              <Card.Text
-                style={{
-                  //textAlign: "justify",
-                  textAlign: "left",
-                  color: "#463F2F",
-                  lineHeight: "1.5",
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: 100,
-                  fontSize: "0.875rem",
-                  letterSpacing: "0px",
-                  opacity: 1,
-                  margin: "2rem 0 2rem 2rem",
-                }}
-              >
-                If God has moved you and placed it in your heart to support us
-                in building God’s family and providing a home for Gentiles in
-                the Father’s House, and if after prayer you still feel that God
-                is calling you to support our foundation, you can find our bank
-                details below.”
-              </Card.Text>
-              <Card.Text>
-                <p
+            <Card
+              style={{
+                backgroundColor: "#FFFFFF",
+                // maxWidth: "100%",
+                // width: "50vw",
+                borderRadius: "8px",
+                border: "1px solid #463F2F",
+              }}
+            >
+              <Card.Body>
+                <Card.Title
                   style={{
-                    // textAlign: "justify",
+                    textAlign: "left",
+                    color: "#463F2F",
+                    lineHeight: "1.2",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: 600,
+                    letterSpacing: "0px",
+                    opacity: 1,
+                    margin: "1rem 0 1rem 2rem",
+                  }}
+                >
+                  Donations
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    //textAlign: "justify",
                     textAlign: "left",
                     color: "#463F2F",
                     lineHeight: "1.5",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: 400,
+                    fontWeight: 100,
                     fontSize: "0.875rem",
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "2rem 0 0 2rem",
+                    margin: "1.5rem 0 1rem 2rem",
                   }}
                 >
-                  NL64INGB0007803779{" "}
-                </p>
-                <p
+                  If God has moved you and placed it in your heart to support us
+                  in building God’s family and providing a home for Gentiles in
+                  the Father’s House, and if after prayer you still feel that
+                  God is calling you to support our foundation, you can find our
+                  bank details below.”
+                </Card.Text>
+                <Card.Text>
+                  <p
+                    style={{
+                      // textAlign: "justify",
+                      textAlign: "left",
+                      color: "#463F2F",
+                      lineHeight: "1.5",
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: 400,
+                      fontSize: "0.875rem",
+                      letterSpacing: "0px",
+                      opacity: 1,
+                      margin: "1rem 0 0 2rem",
+                    }}
+                  >
+                    NL64INGB0007803779{" "}
+                  </p>
+                  <p
+                    style={{
+                      //  textAlign: "justify",
+                      textAlign: "left",
+                      color: "#463F2F",
+                      lineHeight: "1.5",
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: 400,
+                      fontSize: "0.875rem",
+                      letterSpacing: "0px",
+                      opacity: 1,
+                      margin: "0 0 0 2rem",
+                    }}
+                  >
+                    INGBNL2A{" "}
+                  </p>
+                  <p
+                    style={{
+                      // textAlign: "justify",
+                      textAlign: "left",
+                      color: "#463F2F",
+                      lineHeight: "1.5",
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: 400,
+                      fontSize: "0.875rem",
+                      letterSpacing: "0px",
+                      opacity: 1,
+                      margin: "0 0 2rem 2rem",
+                    }}
+                  >
+                    Stichting Father’s House
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Container>
+
+          {/* Display the left Container on Small Screen */}
+
+          <Container
+            className="d-flex d-md-none"
+            style={{
+              maxWidth: "100%",
+            }}
+          >
+            <Card
+              style={{
+                backgroundColor: "#FFFFFF",
+                // maxWidth: "100%",
+                borderRadius: "8px",
+                border: "1px solid #463F2F",
+              }}
+            >
+              <Card.Body>
+                <Card.Title
                   style={{
-                    //  textAlign: "justify",
+                    textAlign: "left",
+                    color: "#463F2F",
+                    lineHeight: "1.2",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: 600,
+                    letterSpacing: "0px",
+                    opacity: 1,
+                    margin: "2rem 0 2rem 2rem",
+                  }}
+                >
+                  Donations
+                </Card.Title>
+                <Card.Text
+                  style={{
+                    //textAlign: "justify",
                     textAlign: "left",
                     color: "#463F2F",
                     lineHeight: "1.5",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: 400,
+                    fontWeight: 100,
                     fontSize: "0.875rem",
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0 0 0 2rem",
+                    margin: "2rem 0 2rem 2rem",
                   }}
                 >
-                  INGBNL2A{" "}
-                </p>
-                <p
-                  style={{
-                    // textAlign: "justify",
-                    textAlign: "left",
-                    color: "#463F2F",
-                    lineHeight: "1.5",
-                    fontFamily: "Inter, sans-serif",
-                    fontWeight: 400,
-                    fontSize: "0.875rem",
-                    letterSpacing: "0px",
-                    opacity: 1,
-                    margin: "0 0 2rem 2rem",
-                  }}
-                >
-                  Stichting Father’s House
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
+                  If God has moved you and placed it in your heart to support us
+                  in building God’s family and providing a home for Gentiles in
+                  the Father’s House, and if after prayer you still feel that
+                  God is calling you to support our foundation, you can find our
+                  bank details below.”
+                </Card.Text>
+                <Card.Text>
+                  <p
+                    style={{
+                      // textAlign: "justify",
+                      textAlign: "left",
+                      color: "#463F2F",
+                      lineHeight: "1.5",
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: 400,
+                      fontSize: "0.875rem",
+                      letterSpacing: "0px",
+                      opacity: 1,
+                      margin: "2rem 0 0 2rem",
+                    }}
+                  >
+                    NL64INGB0007803779{" "}
+                  </p>
+                  <p
+                    style={{
+                      //  textAlign: "justify",
+                      textAlign: "left",
+                      color: "#463F2F",
+                      lineHeight: "1.5",
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: 400,
+                      fontSize: "0.875rem",
+                      letterSpacing: "0px",
+                      opacity: 1,
+                      margin: "0 0 0 2rem",
+                    }}
+                  >
+                    INGBNL2A{" "}
+                  </p>
+                  <p
+                    style={{
+                      // textAlign: "justify",
+                      textAlign: "left",
+                      color: "#463F2F",
+                      lineHeight: "1.5",
+                      fontFamily: "Inter, sans-serif",
+                      fontWeight: 400,
+                      fontSize: "0.875rem",
+                      letterSpacing: "0px",
+                      opacity: 1,
+                      margin: "0 0 2rem 2rem",
+                    }}
+                  >
+                    Stichting Father’s House
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Container>
+
           {/* Rights Reserved */}
           <div
-            className=" d-none d-md-flex flex-column flex-md-row  "
+            className=" d-none d-md-flex   flex-md-row   "
             style={{
               backgroundColor: "transparnet",
               justifyContent: "space-evenly",
-              width: "100vw",
-              maxWidth: "100%",
-              margin: "2rem 0",
+
+              width: "400px",
+              maxWidth: "80%",
+              // margin: "3rem 5rem 0 0",
+              marginTop: "3rem",
               textAlign: "center",
+              marginRight: "1.5rem",
             }}
           >
             <p
@@ -196,7 +318,7 @@ const Footer = () => {
           xs={12}
           sm={12}
           md={6}
-          lg={6}
+          lg={5}
           style={{
             backgroundColor: "#F49640",
             display: "flex",

@@ -54,6 +54,8 @@ const Videosection = () => {
                   letterSpacing: "0px",
                   opacity: 1,
                   marginTop: "2rem",
+                  marginLeft: "-1.5rem",
+                  fontSize: "1.2rem",
                 }}
               >
                 Video's
@@ -68,6 +70,7 @@ const Videosection = () => {
                   opacity: 1,
                   marginTop: "1rem",
                   marginBottom: "2rem",
+                  marginLeft: "-1.5rem",
                 }}
               >
                 Watch teachings
@@ -154,13 +157,20 @@ const Videosection = () => {
 
           {/* Video Grid Section */}
           <Container fluid style={{ padding: 0 }}>
+            {/*  Added   marginLeft: "-1rem"*/}
+            className="p-4 p-sm-auto p-md-5 p-lg-7
             <Row className={isMobile ? "g-4" : "g-3"}>
               {(isMobile ? mobileVideos : videos).map((video) => (
                 <Col key={video.id} xs={12} sm={6} md={4}>
                   <div
                     //  animate__animated animate__rotateInUpRight
                     className="position-relative     "
-                    data-aos="flip-right"
+                    // data-aos="flip-right"
+                    // data-aos-offset="200"
+                    // data-aos-delay="50"
+                    // data-aos-duration="1000"
+                    // data-aos-easing="ease-in-out"
+                    data-aos="zoom-in-left"
                     data-aos-offset="200"
                     data-aos-delay="50"
                     data-aos-duration="1000"

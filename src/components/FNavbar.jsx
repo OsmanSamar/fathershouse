@@ -21,6 +21,8 @@ const FNavbar = () => {
       style={{
         backgroundColor: "#F8F4EE",
         fontSize: "1rem",
+        padding: "1rem",
+        ///////Added padding
       }}
     >
       <Container style={{ padding: " 0.30rem 2rem 0.30rem 2rem" }}>
@@ -29,7 +31,7 @@ const FNavbar = () => {
             src={logo}
             alt="Fathers_House_Logo"
             style={{
-              width: "180px",
+              width: "170px",
               height: "auto",
               marginLeft: "0",
             }}
@@ -117,7 +119,7 @@ const FNavbar = () => {
                 // backgroundColor: "#F49640",
                 backgroundColor: isHovered ? "#d97f2e" : "#F49640",
                 margin: "10px",
-                fontSize: "1rem",
+                fontSize: "0.875rem",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: 600,
                 transform: isClicked
@@ -151,9 +153,11 @@ const FNavbar = () => {
               // backgroundColor: "#F49640",
               backgroundColor: isHovered ? "#d97f2e" : "#F49640",
               margin: "10px",
-              fontSize: "1rem",
+              padding: "0.8rem 1.7rem 0.8rem 1.7rem",
+              fontSize: "0.875rem",
               fontFamily: "Inter, sans-serif",
               fontWeight: 600,
+              textTransform: "none",
               transform: isClicked
                 ? "scale(0.95)"
                 : isHovered
