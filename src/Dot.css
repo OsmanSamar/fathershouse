@@ -1,0 +1,10 @@
+.dot {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: #f49640;
+  border-radius: 50%;
+  pointer-events: none; /* Ensures the dot does not interfere with cursor actions */
+  transform: translate(-50%, -50%); /* Centers the dot on the cursor */
+  z-index: 1000;
+}

@@ -51,17 +51,23 @@ const ScrollButton = () => {
       }}
     >
       {isAtTop ? (
-        <FaArrowAltCircleDown
-          size={26}
-          color="#463F2F"
-          backgroundColor="#FFFFFF"
-        />
+        <div
+          style={{
+            backgroundColor: "#FFFFFF",
+            color: "#463F2F",
+          }}
+        >
+          <FaArrowAltCircleDown size={26} />
+        </div>
       ) : (
-        <FaArrowAltCircleUp
-          size={26}
-          color="#463F2F"
-          backgroundColor="#FFFFFF"
-        />
+        <div
+          style={{
+            backgroundColor: "#FFFFFF",
+            color: "#463F2F",
+          }}
+        >
+          <FaArrowAltCircleUp size={26} />
+        </div>
       )}
     </div>
   );

@@ -1,8 +1,31 @@
 import React, { useState, useEffect } from "react";
 
-function WelcomeBack() {
+function Welcome({ onAnimationComplete }) {
   const [isVisible, setIsVisible] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
+
+  // useEffect(() => {
+  //   const showDuration = 15000; // Duration for showing the welcome screen
+  //   const fadeDuration = 100; // Duration for the fade-out animation
+
+  //   // Hide the welcome screen after the show duration
+  //   const hideTimer = setTimeout(() => {
+  //     setFadeOut(true);
+  //   }, showDuration);
+
+  //   // Remove the welcome screen from view after the fade-out duration
+  //   const removeTimer = setTimeout(() => {
+  //     setIsVisible(false);
+  //     if (onAnimationComplete) {
+  //       onAnimationComplete();
+  //     }
+  //   }, showDuration + fadeDuration);
+
+  //   return () => {
+  //     clearTimeout(hideTimer);
+  //     clearTimeout(removeTimer);
+  //   };
+  // }, [onAnimationComplete]);
 
   useEffect(() => {
     const showTimer = setTimeout(() => {
@@ -24,11 +47,23 @@ function WelcomeBack() {
     };
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      console.log("Triggering onAnimationComplete");
+      if (onAnimationComplete) {
+        onAnimationComplete();
+      }
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, [onAnimationComplete]);
+
   const circleStyle = {
     position: "fixed",
-    top: isVisible ? "50px" : "-200px",
-    left: "50%",
-    transform: "translateX(-50%)",
+    top: isVisible ? "50%" : "-200px", // Center vertically
+    left: "50%", // Center horizontally
+    transform: "translate(-50%, -50%)", // Offset by half of its own width and height to center
+    //transform: "translateX(-50%)",
     width: "200px",
     height: "200px",
     backgroundColor: fadeOut ? "rgba(0, 0, 0, 0.8)" : "rgba(0, 0, 0, 0.5)",
@@ -48,13 +83,16 @@ function WelcomeBack() {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 1)",
+    background:
+      "radial-gradient(circle at center, #F49640 20%, #82725A 50%, #776B60 70%, #DDD1C7 80%, #C6C0B4 100%)",
+
+    // backgroundColor: "rgba(0, 0, 0, 1)",
     //backgroundColor: "rgba(0, 0, 0, 0.3)", // Slightly transparent overlay
-    opacity: fadeOut ? 0 : 0.7, // Fades to 0 when the circle starts fading out
+    opacity: fadeOut ? 0 : 0.85, // Fades to 0 when the circle starts fading out
     transition: "opacity 1.5s ease-out",
     zIndex: 999, // Ensure the overlay is behind the circle
     pointerEvents: "none", // Allow clicks through the overlay
-    //pointerEvents: fadeOut ? "none" : "auto", // Block interactions while the overlay is visible
+    //  pointerEvents: fadeOut ? "none" : "auto", // Block interactions while the overlay is visible
   };
 
   return (
@@ -80,4 +118,4 @@ function WelcomeBack() {
   );
 }
 
-export default WelcomeBack;
+export default Welcome;
