@@ -402,6 +402,7 @@ const Footer = () => {
               backgroundColor: "transparent",
               border: "none",
               boxShadow: "none",
+              width: "27vw",
             }}
           >
             <Card.Body>
@@ -430,8 +431,9 @@ const Footer = () => {
                   fontWeight: 600,
                   letterSpacing: "0px",
                   opacity: 1,
-                  fontSize: "0.875rem",
+                  fontSize: "0.75rem",
                   margin: "0 0.1rem 1rem 0",
+                  objectFit: "contain",
                 }}
               >
                 E-mail Adress*
@@ -453,7 +455,7 @@ const Footer = () => {
                     fontSize: "0.75rem",
                     opacity: 1,
                     // margin: "0 1rem 1rem 1rem",
-                    margin: "0 0 1rem 0",
+                    // margin: "0 0 1rem 0",
                     width: "90%",
                     maxWidth: "100%",
                     boxSizing: "border-box",
@@ -470,8 +472,8 @@ const Footer = () => {
                   letterSpacing: "0px",
                   opacity: 1,
                   // margin: "2rem 0",
-                  fontSize: "0.75rem",
-                  margin: "0 2rem 2rem 0",
+                  fontSize: "0.60rem",
+                  margin: "0 1rem 1rem 0",
                   width: "80%",
                   maxWidth: "100%",
                 }}
