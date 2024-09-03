@@ -331,7 +331,7 @@ const Footer = () => {
             <Row className="g-2 align-items-center">
               <Col
                 xs={12}
-                md={5}
+                md={4}
                 className="text-center text-md-start text-lg-start"
               >
                 <div
@@ -348,7 +348,7 @@ const Footer = () => {
                     margin: "0 0.1rem 1rem 0",
                     padding: "0 1rem",
 
-                    fontSize: "calc(0.875rem + 1vw)",
+                    fontSize: "calc(0.75rem + 1vw)",
                   }}
                 >
                   <p>Questions?</p>
@@ -356,7 +356,7 @@ const Footer = () => {
               </Col>
               <Col
                 xs={12}
-                md={5}
+                md={4}
                 className="text-center text-md-start text-lg-start"
               >
                 <input
@@ -402,7 +402,7 @@ const Footer = () => {
               backgroundColor: "transparent",
               border: "none",
               boxShadow: "none",
-              width: "27vw",
+              //  width: "27vw",
             }}
           >
             <Card.Body>
