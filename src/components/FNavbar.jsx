@@ -96,7 +96,7 @@ const FNavbar = () => {
           {/* Button for small and medium screens (including tablets) */}
           <div className="text-center d-lg-none ">
             <Button
-              className="btn btn-success"
+              // className="btn btn-success"
               style={{
                 borderRadius: "4px",
                 color: isHovered ? "#ffffff" : "#463F2F",
@@ -125,7 +125,7 @@ const FNavbar = () => {
         {/* Button for larger screens (lg and up) */}
         <div className="me-auto d-none d-lg-block ">
           <Button
-            className="btn btn-success"
+            // className="btn btn-success"
             style={{
               borderRadius: "4px",
               color: isHovered ? "#ffffff" : "#463F2F",

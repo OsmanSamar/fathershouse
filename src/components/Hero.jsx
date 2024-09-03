@@ -45,8 +45,9 @@ const Hero = () => {
             <Col>
               <h6
                 style={{
-                  fontSize: "1.6rem",
-                  fontFamily: "inter, medium",
+                  fontSize: "1.3rem",
+                  // fontFamily: "inter, medium",
+                  fontFamily: "Inter, sans-serif",
                   textAlign: "center",
                   padding: "3rem 0 1rem 0",
                   letterSpacing: "0px",
@@ -57,10 +58,10 @@ const Hero = () => {
               >
                 Father’s House
               </h6>
-              <h1
+              <h2
                 className="animate__animated animate__backInUp"
                 style={{
-                  fontSize: "clamp(1.5rem, 2.6vw + 1rem, 4rem)", //clamp for responsiveness
+                  fontSize: "clamp(1rem, 2.6vw + 1rem, 3rem)", //clamp for responsiveness
 
                   fontFamily: "Inter, sans-serif",
                   fontWeight: 600,
@@ -80,7 +81,7 @@ const Hero = () => {
               >
                 Building God’s family and helping Jews and Gentiles to find a
                 home in the Father’s House
-              </h1>
+              </h2>
 
               <Container
                 style={{
@@ -100,7 +101,7 @@ const Hero = () => {
                     textAlign: "center",
                     fontSize: "0.875rem",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: 500,
+                    fontWeight: 600,
                     letterSpacing: "0px", // default spacing.
                     opacity: "1",
                     textTransform: "none",
@@ -120,7 +121,7 @@ const Hero = () => {
                     textAlign: "center",
                     fontSize: "0.875rem",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: 500,
+                    fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: "1",
                     textTransform: "none",
