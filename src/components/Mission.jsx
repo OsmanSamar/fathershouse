@@ -392,20 +392,21 @@ const Mission = () => {
             <Card.Text
               style={{
                 color: "#463F2F",
-                fontFamily: "Inter, sans-serif",
+                fontFamily: "Inter, Regular",
                 fontSize: "1rem",
                 lineHeight: "1.5rem",
                 letterSpacing: "0px",
                 opacity: 1,
                 margin: "2rem auto 0 auto",
-                width: "48%",
+                width: "39%",
               }}
             >
               {}
               Our mission is to{" "}
               <span
                 style={{
-                  fontWeight: "bold",
+                  fontWeight: "semibold",
+                  fontFamily: "Inter, sans-serif",
                 }}
               >
                 activate, empower and mobilize
@@ -664,8 +665,9 @@ const Mission = () => {
                       fontWeight: 500,
                       letterSpacing: "0px",
                       opacity: 1,
-                      marginLeft: "2rem",
+                      //  marginLeft: "3rem",
                       textTransform: "none",
+
                       transform: isClicked
                         ? "scale(0.95)"
                         : isHovered
