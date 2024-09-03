@@ -33,7 +33,7 @@ const Footer = () => {
             className="d-none d-md-block"
             style={{
               //  width: "515px",
-              width: "528px",
+              width: "548px",
               maxWidth: "100%",
               // marginRight: "-0.5rem",
               // marginLeft: "7rem",
