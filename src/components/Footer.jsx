@@ -58,7 +58,7 @@ const Footer = () => {
                     fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "1rem 0 1rem 2rem",
+                    margin: "1rem 0 1rem 1rem",
                   }}
                 >
                   Donations
@@ -73,7 +73,7 @@ const Footer = () => {
                     fontSize: "1rem",
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "1.5rem 0 1rem 2rem",
+                    margin: "1.5rem 0 1rem 1rem",
                   }}
                 >
                   If God has moved you and placed it in your heart to support us
@@ -93,7 +93,7 @@ const Footer = () => {
                       fontSize: "0.875rem",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "1rem 0 0 2rem",
+                      margin: "1rem 0 0 1rem",
                     }}
                   >
                     NL64INGB0007803779{" "}
@@ -108,7 +108,7 @@ const Footer = () => {
                       fontSize: "0.875rem",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "0 0 0 2rem",
+                      margin: "0 0 0 1rem",
                     }}
                   >
                     INGBNL2A{" "}
@@ -123,7 +123,7 @@ const Footer = () => {
                       fontSize: "0.875rem",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "0 0 2rem 2rem",
+                      margin: "0 0 2rem 1rem",
                     }}
                   >
                     Stichting Father’s House
