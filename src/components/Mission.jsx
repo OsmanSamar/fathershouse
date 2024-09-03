@@ -669,7 +669,8 @@ const Mission = () => {
                       fontWeight: 500,
                       letterSpacing: "0px",
                       opacity: 1,
-                      //  marginLeft: "3rem",
+                      marginLeft: "1rem",
+
                       textTransform: "none",
 
                       transform: isClicked
