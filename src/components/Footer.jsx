@@ -25,7 +25,7 @@ const Footer = () => {
             justifyContent: "center",
             alignItems: "center",
             color: "#F8F4EE",
-            padding: "2rem",
+            padding: "2rem 0",
           }}
         >
           {/* Display on md screen */}
@@ -33,10 +33,10 @@ const Footer = () => {
             className="d-none d-md-block"
             style={{
               //  width: "515px",
-              width: "516px",
+              width: "528px",
               maxWidth: "100%",
               // marginRight: "-0.5rem",
-              marginLeft: "4em",
+              // marginLeft: "7rem",
             }}
           >
             <Card
