@@ -31,12 +31,16 @@ const Footer = () => {
           <Container
             className="d-none d-md-flex"
             style={{
-              width: "515px",
+              //  width: "515px",
+              width: "516px",
               maxWidth: "100%",
-              marginRight: "0.5rem",
-              marginLeft: "0.5rem",
+
+              // marginRight: "0.5rem",
+
               // marginRight: "2rem",
               // marginLeft: "7rem",
+              marginRight: "-0.5rem",
+              marginLeft: "3rem",
             }}
           >
             <Card
@@ -251,8 +255,10 @@ const Footer = () => {
               marginTop: "3rem",
               // textAlign: "start",
               // marginRight: "1.5rem",
-              marginRight: "0.7rem",
-              marginLeft: "0.7rem",
+              // marginRight: "0.7rem",
+              // marginLeft: "0.7rem",
+              marginRight: "-0.5rem",
+              marginLeft: "3rem",
             }}
           >
             <p
