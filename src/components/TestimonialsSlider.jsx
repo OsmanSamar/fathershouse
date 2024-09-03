@@ -176,7 +176,7 @@ const TestimonialsSlider = () => {
                     style={{
                       color: "#463F2F",
                       fontFamily: "Inter, sans-serif",
-                      fontSize: "0.75rem",
+                      fontSize: "0.875rem",
                       lineHeight: "1.2rem",
                       letterSpacing: "0px",
                       opacity: expandedCard === cardId ? 1 : 0.7,
