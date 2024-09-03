@@ -440,7 +440,7 @@ const Mission = () => {
                       lineHeight: "1.5rem",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "1rem 1rem 1rem 0",
+                      margin: "1rem 1rem 1rem -1rem",
                       padding: "0.5rem  1rem  0.5rem 0",
                       // padding: "0.7rem",
                       textAlign: "left",
@@ -479,6 +479,7 @@ const Mission = () => {
                       //  padding: "0.7rem",
                       // padding: "0.5rem 0",
                       padding: "0 1rem  0.5rem 0",
+                      margin: "1rem 1rem 1rem -1rem",
                       textAlign: "left",
                     }}
                     data-aos="fade-right"
@@ -515,7 +516,8 @@ const Mission = () => {
                       // padding: "0.7rem",
                       //  padding: "0.5rem 0",
                       // padding: "0 1rem  0.5rem 0",
-                      margin: "1rem 1rem 1rem 0",
+                      // margin: "1rem 1rem 1rem 0",
+                      margin: "1rem 1rem 1rem -1rem",
                       padding: "0.5rem  1rem  0.5rem 0",
                       textAlign: "left",
                     }}
@@ -545,9 +547,9 @@ const Mission = () => {
                 {/* Left column */}
                 {/* Added   marginLeft: "4rem", */}
                 <Col
-                  style={{
-                    marginLeft: "2rem",
-                  }}
+                // style={{
+                //   marginLeft: "2rem",
+                // }}
                 >
                   <Card.Text
                     style={{
@@ -563,7 +565,8 @@ const Mission = () => {
                       //  padding: "0.5rem 0",
                       // padding: "2.5rem 0",
                       //  padding: "0 1rem  0.5rem 0",
-                      margin: "1rem 1rem 1rem 0",
+                      //  margin: "1rem 1rem 1rem 0",
+                      margin: "1rem -1rem 1rem 1rem",
                       padding: "0.5rem  1rem  0.5rem 0",
                       textAlign: "left",
                     }}
@@ -607,7 +610,8 @@ const Mission = () => {
                       // padding: "0.7rem",
                       //  padding: "0.5rem 0",
                       //  padding: "0 1rem  0.5rem 0",
-                      margin: "1rem 1rem 1rem 0",
+                      // margin: "1rem 1rem 1rem 0",
+                      margin: "1rem -1rem 1rem 1rem",
                       padding: "0.5rem  1rem  0.5rem 0",
                       textAlign: "left",
                     }}
