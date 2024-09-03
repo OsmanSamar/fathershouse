@@ -31,12 +31,12 @@ const Footer = () => {
           <Container
             className="d-none d-md-flex"
             style={{
-              width: "533px",
+              width: "515px",
               maxWidth: "100%",
               marginRight: "0.5rem",
               marginLeft: "0.5rem",
-
-              // marginRight: "1.5rem",
+              // marginRight: "2rem",
+              // marginLeft: "7rem",
             }}
           >
             <Card
@@ -70,7 +70,7 @@ const Footer = () => {
                     lineHeight: "1.5",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 100,
-                    fontSize: "0.875rem",
+                    fontSize: "0.75rem",
                     letterSpacing: "0px",
                     opacity: 1,
                     margin: "1.5rem 0 1rem 2rem",
@@ -240,19 +240,24 @@ const Footer = () => {
             className=" d-none d-md-flex   flex-md-row   "
             style={{
               backgroundColor: "transparnet",
-              justifyContent: "space-evenly",
+              // justifyContent: "space-evenly",
 
-              width: "400px",
-              maxWidth: "80%",
+              // width: "400px",
+              // maxWidth: "80%",
+
+              width: "500px",
+              maxWidth: "100%",
               // margin: "3rem 5rem 0 0",
               marginTop: "3rem",
-              textAlign: "center",
-              marginRight: "1.5rem",
+              // textAlign: "start",
+              // marginRight: "1.5rem",
+              marginRight: "0.7rem",
+              marginLeft: "0.7rem",
             }}
           >
             <p
               style={{
-                textAlign: "center",
+                //   textAlign: "start",
                 color: "#463F2F",
                 lineHeight: "1.5",
                 fontFamily: "Inter, sans-serif",
@@ -260,13 +265,15 @@ const Footer = () => {
                 fontSize: "0.7rem",
                 letterSpacing: "0px",
                 opacity: 1,
+                marginRight: "0.75rem",
+                marginLeft: "0.93rem",
               }}
             >
               ©2024 all rights reserved
             </p>
             <p
               style={{
-                textAlign: "center",
+                // textAlign: "center",
                 color: "#463F2F",
                 lineHeight: "1.5",
                 fontFamily: "Inter, sans-serif",
@@ -276,13 +283,14 @@ const Footer = () => {
                 opacity: 1,
 
                 textDecoration: "underline",
+                marginRight: "0.75rem",
               }}
             >
               Privacy statement
             </p>
             <p
               style={{
-                textAlign: "center",
+                //  textAlign: "center",
                 color: "#463F2F",
                 lineHeight: "1.5",
                 fontFamily: "Inter, sans-serif",
