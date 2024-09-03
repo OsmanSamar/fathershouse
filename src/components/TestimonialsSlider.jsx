@@ -101,7 +101,6 @@ const TestimonialsSlider = () => {
                     marginBottom: "1rem",
                     // marginTop: "1rem",
                   }}
-                  //   className="animate__animated animate__zoomIn"
                 >
                   <div
                     data-aos="fade-up"
@@ -136,7 +135,6 @@ const TestimonialsSlider = () => {
                       lineHeight: "1.2",
                       fontFamily: "Inter, sans-serif",
                       fontWeight: "300",
-                      // padding: "0.1rem",
                       marginTop: "0.5rem",
                     }}
                   >

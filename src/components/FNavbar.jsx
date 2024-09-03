@@ -95,28 +95,11 @@ const FNavbar = () => {
 
           {/* Button for small and medium screens (including tablets) */}
           <div className="text-center d-lg-none ">
-            {/* <Button
-              className="btn btn-success  "
-              style={{
-                borderRadius: "4px",
-                color: "#463F2F",
-                backgroundColor: "#F49640",
-                margin: "10px",
-                fontSize: "1rem",
-                fontFamily: "Inter, sans-serif",
-                fontWeight: 600,
-              }}
-            >
-              Stay informed
-            </Button> */}
-
             <Button
               className="btn btn-success"
               style={{
                 borderRadius: "4px",
-                // color: "#463F2F",
                 color: isHovered ? "#ffffff" : "#463F2F",
-                // backgroundColor: "#F49640",
                 backgroundColor: isHovered ? "#d97f2e" : "#F49640",
                 margin: "10px",
                 fontSize: "0.875rem",
@@ -129,9 +112,6 @@ const FNavbar = () => {
                   : "scale(1)",
                 transition:
                   "transform 0.3s ease, background-color 0.3s ease, color 0.3s ease",
-                // boxShadow: isHovered
-                //   ? "0px 8px 15px rgba(0, 0, 0, 0.2)"
-                //   : "none",
               }}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
@@ -148,9 +128,7 @@ const FNavbar = () => {
             className="btn btn-success"
             style={{
               borderRadius: "4px",
-              // color: "#463F2F",
               color: isHovered ? "#ffffff" : "#463F2F",
-              // backgroundColor: "#F49640",
               backgroundColor: isHovered ? "#d97f2e" : "#F49640",
               margin: "10px",
               padding: "0.8rem 1.7rem 0.8rem 1.7rem",

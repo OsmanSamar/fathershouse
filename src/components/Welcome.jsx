@@ -1,31 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-function Welcome({ onAnimationComplete }) {
+function Welcome() {
   const [isVisible, setIsVisible] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
-
-  // useEffect(() => {
-  //   const showDuration = 15000; // Duration for showing the welcome screen
-  //   const fadeDuration = 100; // Duration for the fade-out animation
-
-  //   // Hide the welcome screen after the show duration
-  //   const hideTimer = setTimeout(() => {
-  //     setFadeOut(true);
-  //   }, showDuration);
-
-  //   // Remove the welcome screen from view after the fade-out duration
-  //   const removeTimer = setTimeout(() => {
-  //     setIsVisible(false);
-  //     if (onAnimationComplete) {
-  //       onAnimationComplete();
-  //     }
-  //   }, showDuration + fadeDuration);
-
-  //   return () => {
-  //     clearTimeout(hideTimer);
-  //     clearTimeout(removeTimer);
-  //   };
-  // }, [onAnimationComplete]);
 
   useEffect(() => {
     const showTimer = setTimeout(() => {
@@ -34,7 +11,7 @@ function Welcome({ onAnimationComplete }) {
 
     const hideTimer = setTimeout(() => {
       setFadeOut(true);
-    }, 3000); // Circle visible for 3 seconds
+    }, 2000); // Circle visible for 3 seconds
 
     const disappearTimer = setTimeout(() => {
       setIsVisible(false);
@@ -46,17 +23,6 @@ function Welcome({ onAnimationComplete }) {
       clearTimeout(disappearTimer);
     };
   }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      console.log("Triggering onAnimationComplete");
-      if (onAnimationComplete) {
-        onAnimationComplete();
-      }
-    }, 6000);
-
-    return () => clearTimeout(timer);
-  }, [onAnimationComplete]);
 
   const circleStyle = {
     position: "fixed",

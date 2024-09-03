@@ -43,7 +43,11 @@ const Videosection = () => {
         {/* The headers */}
         <Container className="p-4 p-sm-auto p-md-5 p-lg-7  ">
           <Row className="w-100 m-auto  ">
-            <Col className="text-center text-md-start">
+            <Col
+              // xs={12} md={4} lg={2}
+              // xs={12}
+              className="text-center text-md-start"
+            >
               <h3
                 className={isMobile ? "text-2xl " : "text-3xl"}
                 style={{
@@ -85,42 +89,15 @@ const Videosection = () => {
               className="d-flex justify-content-md-end justify-content-center align-items-center"
             >
               {!isMobile && (
-                // <Button
-                //   className="btn btn-success"
-                //   style={{
-                //     color: "#463F2F",
-                //     backgroundColor: "#F49640",
-                //     border: "none",
-                //     padding: "7px ",
-                //     height: "42px",
-                //     width: "200px",
-                //     maxWidth: "100%",
-                //     textAlign: "center",
-                //     fontSize: "0.75rem",
-                //     fontFamily: "Inter, sans-serif",
-                //     fontWeight: 500,
-                //     letterSpacing: "0px",
-                //     opacity: 1,
-                //     marginTop: "3rem",
-                //     marginBottom: "2rem",
-                //   }}
-                // >
-                //   Watch more video's
-                // </Button>
-
                 <Button
                   className="btn btn-success"
                   style={{
                     borderRadius: "4px",
-                    // color: "#463F2F",
                     color: isHovered ? "#ffffff" : "#463F2F",
-                    // backgroundColor: "#F49640",
                     backgroundColor: isHovered ? "#d97f2e" : "#F49640",
                     border: "none",
                     padding: "7px ",
                     height: "42px",
-                    // width: "100px",
-                    //maxWidth: "100%",
                     textAlign: "center",
                     fontSize: "0.75rem",
                     fontFamily: "Inter, sans-serif",
@@ -137,9 +114,6 @@ const Videosection = () => {
                       : "scale(1)",
                     transition:
                       "transform 0.3s ease, background-color 0.3s ease, color 0.3s ease",
-                    // boxShadow: isHovered
-                    //   ? "0px 8px 15px rgba(0, 0, 0, 0.2)"
-                    //   : "none",
                   }}
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
@@ -158,18 +132,12 @@ const Videosection = () => {
           {/* Video Grid Section */}
           <Container fluid style={{ padding: 0 }}>
             {/*  Added   marginLeft: "-1rem"*/}
-            className="p-4 p-sm-auto p-md-5 p-lg-7
+
             <Row className={isMobile ? "g-4" : "g-3"}>
               {(isMobile ? mobileVideos : videos).map((video) => (
                 <Col key={video.id} xs={12} sm={6} md={4}>
                   <div
-                    //  animate__animated animate__rotateInUpRight
                     className="position-relative     "
-                    // data-aos="flip-right"
-                    // data-aos-offset="200"
-                    // data-aos-delay="50"
-                    // data-aos-duration="1000"
-                    // data-aos-easing="ease-in-out"
                     data-aos="zoom-in-left"
                     data-aos-offset="200"
                     data-aos-delay="50"
@@ -229,12 +197,11 @@ const Videosection = () => {
             </Row>
           </Container>
 
-          {/* Spacer */}
-
           {/* Button Section for Mobile */}
           {isMobile && (
             <Container className="text-center " style={{ padding: 0 }}>
               <Button
+                className="btn btn-success"
                 style={{
                   color: "#463F2F",
                   backgroundColor: "#F49640",
