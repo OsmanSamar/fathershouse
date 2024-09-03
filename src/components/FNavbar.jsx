@@ -20,7 +20,7 @@ const FNavbar = () => {
       expand="lg"
       style={{
         backgroundColor: "#F8F4EE",
-        fontSize: "1rem",
+        // fontSize: "1rem",
         padding: "1rem",
         ///////Added padding
       }}
@@ -66,27 +66,27 @@ const FNavbar = () => {
               fontWeight: 500,
             }}
           >
-            <Nav.Link href="#watch" style={{ margin: "0 1rem" }}>
+            <Nav.Link href="#watch" style={{ margin: "0 0.6rem" }}>
               <Link to="watch" smooth={true} duration={500}>
                 Watch
               </Link>
             </Nav.Link>
-            <Nav.Link href="#mission" style={{ margin: "0 1rem" }}>
+            <Nav.Link href="#mission" style={{ margin: "0 0.6rem" }}>
               <Link to="mission" smooth={true} duration={500}>
                 Mission
               </Link>
             </Nav.Link>
-            <Nav.Link href="#ministry" style={{ margin: "0 1rem" }}>
+            <Nav.Link href="#ministry" style={{ margin: "0 0.6rem" }}>
               <Link to="ministry" smooth={true} duration={500}>
                 Ministry
               </Link>
             </Nav.Link>
-            <Nav.Link href="#team" style={{ margin: "0 1rem" }}>
+            <Nav.Link href="#team" style={{ margin: "0 0.6rem" }}>
               <Link to="team" smooth={true} duration={500}>
                 Team
               </Link>
             </Nav.Link>
-            <Nav.Link href="#contact" style={{ margin: "0 1rem" }}>
+            <Nav.Link href="#contact" style={{ margin: "0 0.6rem" }}>
               <Link to="contact" smooth={true} duration={500}>
                 Contact
               </Link>
@@ -131,7 +131,7 @@ const FNavbar = () => {
               color: isHovered ? "#ffffff" : "#463F2F",
               backgroundColor: isHovered ? "#d97f2e" : "#F49640",
               margin: "10px",
-              padding: "0.8rem 1.7rem 0.8rem 1.7rem",
+              padding: "0.8rem 1.2rem 0.8rem 1.2rem",
               fontSize: "0.875rem",
               fontFamily: "Inter, sans-serif",
               fontWeight: 600,
