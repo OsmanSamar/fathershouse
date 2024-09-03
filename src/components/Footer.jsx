@@ -28,14 +28,15 @@ const Footer = () => {
             padding: "2rem",
           }}
         >
+          {/* Display on md screen */}
           <Container
-            className="d-none d-md-flex"
+            className="d-none d-md-block"
             style={{
               //  width: "515px",
               width: "516px",
               maxWidth: "100%",
               // marginRight: "-0.5rem",
-              // marginLeft: "3rem",
+              marginRight: "8rem",
             }}
           >
             <Card
@@ -165,7 +166,6 @@ const Footer = () => {
                 </Card.Title>
                 <Card.Text
                   style={{
-                    //textAlign: "justify",
                     textAlign: "left",
                     color: "#463F2F",
                     lineHeight: "1.5",
@@ -254,7 +254,6 @@ const Footer = () => {
           >
             <p
               style={{
-                //   textAlign: "start",
                 color: "#463F2F",
                 lineHeight: "1.5",
                 fontFamily: "Inter, sans-serif",
@@ -270,7 +269,6 @@ const Footer = () => {
             </p>
             <p
               style={{
-                // textAlign: "center",
                 color: "#463F2F",
                 lineHeight: "1.5",
                 fontFamily: "Inter, sans-serif",
@@ -287,7 +285,6 @@ const Footer = () => {
             </p>
             <p
               style={{
-                //  textAlign: "center",
                 color: "#463F2F",
                 lineHeight: "1.5",
                 fontFamily: "Inter, sans-serif",
