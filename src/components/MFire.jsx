@@ -47,7 +47,8 @@ const MFire = () => {
                       lineHeight: "1.2",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "1rem 0 0 0",
+                      //margin: "1rem 0 0 0",
+                      margin: "1rem 0 0 -1rem",
                     }}
                   >
                     Ministry
@@ -60,8 +61,9 @@ const MFire = () => {
                       lineHeight: "1.2",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "1rem 0 0 0",
+                      // margin: "1rem 0 0 0",
                       fontSize: "1.5rem",
+                      margin: "1rem 0 0 -1rem",
                     }}
                   >
                     F.I.R.E.
@@ -76,7 +78,8 @@ const MFire = () => {
                       lineHeight: "1.5",
                       letterSpacing: "0px",
                       opacity: 1,
-                      margin: "2.5rem 0 0 0",
+                      // margin: "2.5rem 0 0 0",
+                      margin: "2.5rem 0 0 -1rem",
                     }}
                   >
                     Fivefold ministry: Inspiring believers to passionately
@@ -106,7 +109,8 @@ const MFire = () => {
                       background: "transparent",
                       border: "none",
                       padding: "0 ",
-                      margin: "0 ",
+                      // margin: "0 ",
+                      margin: "0 1rem 0 0",
                     }}
                   >
                     <div
