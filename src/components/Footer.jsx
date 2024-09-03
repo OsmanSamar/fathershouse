@@ -34,13 +34,8 @@ const Footer = () => {
               //  width: "515px",
               width: "516px",
               maxWidth: "100%",
-
-              // marginRight: "0.5rem",
-
-              // marginRight: "2rem",
-              // marginLeft: "7rem",
-              marginRight: "-0.5rem",
-              marginLeft: "3rem",
+              // marginRight: "-0.5rem",
+              // marginLeft: "3rem",
             }}
           >
             <Card
@@ -251,14 +246,10 @@ const Footer = () => {
 
               width: "500px",
               maxWidth: "100%",
-              // margin: "3rem 5rem 0 0",
               marginTop: "3rem",
-              // textAlign: "start",
-              // marginRight: "1.5rem",
-              // marginRight: "0.7rem",
-              // marginLeft: "0.7rem",
-              marginRight: "-0.5rem",
-              marginLeft: "3rem",
+
+              // marginRight: "-0.5rem",
+              // marginLeft: "3rem",
             }}
           >
             <p
