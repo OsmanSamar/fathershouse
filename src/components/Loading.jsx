@@ -28,14 +28,25 @@ const Loading = () => {
 
   return (
     <>
-      <div id="wrapper">
+      {/* <div id="wrapper">
         <div className={`dot-loader ${fadeOut ? "fade-out" : ""}`}>
           <div className="dot"></div>
           <div className="dot"></div>
           <div className="dot"></div>
           <div className="dot"></div>
         </div>
-      </div>
+      </div> */}
+
+      {isVisible && (
+        <div id="wrapper">
+          <div className={`dot-loader ${fadeOut ? "fade-out" : ""}`}>
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

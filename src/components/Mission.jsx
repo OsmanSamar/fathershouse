@@ -118,7 +118,7 @@ const Mission = () => {
               </span>{" "}
             </Card.Text>
 
-            {/*  Divider */}
+            {/*  Divider os Small Screen */}
             {isSmallScreen && (
               <div
                 style={{
@@ -133,6 +133,7 @@ const Mission = () => {
                 }}
               ></div>
             )}
+            {/* End of Divider */}
 
             <Card.Text
               style={{
@@ -227,10 +228,14 @@ const Mission = () => {
               }}
               data-aos="fade-right"
               data-aos-offset="200"
-              data-aos-delay="10"
+              data-aos-delay="50"
               data-aos-duration="1000"
-              data-aos-easing="ease-out-cubic"
+              data-aos-easing="ease-in-out"
             >
+              {/*  data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" */}
               To accomplish the above our dedication to equipping the Body of
               Christ to live in grace is of absolute importance. Grace is the
               unmerited Favor and empowerment of God that enables believers to
@@ -265,9 +270,9 @@ const Mission = () => {
                   }}
                   data-aos="fade-right"
                   data-aos-offset="200"
-                  data-aos-delay="10"
+                  data-aos-delay="50"
                   data-aos-duration="1000"
-                  data-aos-easing="ease-out-cubic"
+                  data-aos-easing="ease-in-out"
                 >
                   Our mission is to help to establish the{" "}
                   <span
@@ -305,9 +310,9 @@ const Mission = () => {
                   }}
                   data-aos="fade-right"
                   data-aos-offset="200"
-                  data-aos-delay="10"
+                  data-aos-delay="50"
                   data-aos-duration="1000"
-                  data-aos-easing="ease-out-cubic"
+                  data-aos-easing="ease-in-out"
                 >
                   The Fivefold ministry, comprising apostles, prophets,
                   evangelists, pastors, and teachers, stands as pillars of
@@ -424,6 +429,7 @@ const Mission = () => {
                   textAlign: "left",
                 }}
               >
+                {/* Right column */}
                 <Col>
                   <Card.Text
                     style={{
@@ -440,9 +446,9 @@ const Mission = () => {
                     }}
                     data-aos="fade-right"
                     data-aos-offset="200"
-                    data-aos-delay="10"
+                    data-aos-delay="50"
                     data-aos-duration="1000"
-                    data-aos-easing="ease-out-cubic"
+                    data-aos-easing="ease-in-out"
                   >
                     Central to our mission is the call to inspire believers to
                     pursue God’s divine purpose for Israel. This is meant to be
@@ -476,9 +482,9 @@ const Mission = () => {
                     }}
                     data-aos="fade-right"
                     data-aos-offset="200"
-                    data-aos-delay="10"
+                    data-aos-delay="50"
                     data-aos-duration="1000"
-                    data-aos-easing="ease-out-cubic"
+                    data-aos-easing="ease-in-out"
                   >
                     Furthermore, we are committed to the biblical mandate of
                     reconciling Jews and Gentiles into the “One New Man.” This
@@ -516,7 +522,7 @@ const Mission = () => {
                     data-aos-offset="200"
                     data-aos-delay="50"
                     data-aos-duration="1000"
-                    data-aos-easing="ease-out-cubic"
+                    data-aos-easing="ease-in-out"
                   >
                     To accomplish the above our dedication to equipping the Body
                     of Christ to live in grace is of absolute importance. Grace
@@ -535,8 +541,13 @@ const Mission = () => {
                     impactful service in the Kingdom.
                   </Card.Text>
                 </Col>
-
-                <Col>
+                {/* Left column */}
+                {/* Added   marginLeft: "4rem", */}
+                <Col
+                  style={{
+                    marginLeft: "1.3rem",
+                  }}
+                >
                   <Card.Text
                     style={{
                       color: "#463F2F",
@@ -557,9 +568,9 @@ const Mission = () => {
                     }}
                     data-aos="fade-left"
                     data-aos-offset="200"
-                    data-aos-delay="10"
+                    data-aos-delay="50"
                     data-aos-duration="1000"
-                    data-aos-easing="ease-out-cubic"
+                    data-aos-easing="ease-in-out"
                   >
                     Our mission is to help to establish the{" "}
                     <span
@@ -603,7 +614,7 @@ const Mission = () => {
                     data-aos-offset="200"
                     data-aos-delay="50"
                     data-aos-duration="1000"
-                    data-aos-easing="ease-out-cubic"
+                    data-aos-easing="ease-in-out"
                   >
                     The Fivefold ministry, comprising apostles, prophets,
                     evangelists, pastors, and teachers, stands as pillars of
@@ -643,9 +654,7 @@ const Mission = () => {
                   <Button
                     className="btn btn-success"
                     style={{
-                      // color: "#ffffff",
                       color: isHovered ? "#463F2F" : "#ffffff",
-                      // backgroundColor: "#463f2f",
                       backgroundColor: isHovered ? "#d97f2e" : "#463f2f",
                       border: "4px",
                       padding: "0.5rem 1rem",
@@ -664,9 +673,6 @@ const Mission = () => {
                         : "scale(1)",
                       transition:
                         "transform 0.3s ease, background-color 0.3s ease, color 0.3s ease",
-                      // boxShadow: isHovered
-                      //   ? "0px 8px 15px rgba(0, 0, 0, 0.2)"
-                      //   : "none",
                     }}
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}

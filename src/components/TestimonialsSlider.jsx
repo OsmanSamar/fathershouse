@@ -63,20 +63,48 @@ const TestimonialsSlider = () => {
           >
             The team
           </h2>
-          <p
+          {/* Dispaly on md and lg screen */}
+          <div
             style={{
-              color: "#463F2F",
-              lineHeight: "1.2",
-              fontFamily: "Inter, sans-serif",
-              fontSize: "0.875rem",
-              fontWeight: "500",
-              padding: "10px 15% 4rem 15% ",
+              margin: "2rem auto 0 auto",
+              width: "48%",
+              padding: "0 0.75rem",
             }}
+            className="d-none d-md-block "
           >
-            The core team of the Father’s House includes individuals with
-            successful backgrounds in the church arena and business. The
-            multi-disciplinary team has a passion to get this ministry active.
-          </p>
+            <p
+              style={{
+                color: "#463F2F",
+                lineHeight: "1.2",
+                fontFamily: "Inter, sans-serif",
+                fontSize: "0.875rem",
+                fontWeight: "500",
+                //   padding: "5px 5% 4rem 5% ",
+              }}
+            >
+              The core team of the Father’s House includes individuals with
+              successful backgrounds in the church arena and business. The
+              multi-disciplinary team has a passion to get this ministry active.
+            </p>
+          </div>
+
+          {/* Dispaly on sm  screen */}
+          <div className="d-block d-md-none ">
+            <p
+              style={{
+                color: "#463F2F",
+                lineHeight: "1.2",
+                fontFamily: "Inter, sans-serif",
+                fontSize: "0.875rem",
+                fontWeight: "500",
+                padding: "10px 12% 4rem 12% ",
+              }}
+            >
+              The core team of the Father’s House includes individuals with
+              successful backgrounds in the church arena and business. The
+              multi-disciplinary team has a passion to get this ministry active.
+            </p>
+          </div>
         </div>
       </Container>
       {/* End of Header Section */}

@@ -35,7 +35,8 @@ const Footer = () => {
               maxWidth: "100%",
               marginRight: "0.5rem",
               marginLeft: "0.5rem",
-              // marginRight: "1rem",
+
+              // marginRight: "1.5rem",
             }}
           >
             <Card
@@ -64,7 +65,6 @@ const Footer = () => {
                 </Card.Title>
                 <Card.Text
                   style={{
-                    //textAlign: "justify",
                     textAlign: "left",
                     color: "#463F2F",
                     lineHeight: "1.5",
@@ -85,7 +85,6 @@ const Footer = () => {
                 <Card.Text>
                   <p
                     style={{
-                      // textAlign: "justify",
                       textAlign: "left",
                       color: "#463F2F",
                       lineHeight: "1.5",
@@ -101,7 +100,6 @@ const Footer = () => {
                   </p>
                   <p
                     style={{
-                      //  textAlign: "justify",
                       textAlign: "left",
                       color: "#463F2F",
                       lineHeight: "1.5",
@@ -117,7 +115,6 @@ const Footer = () => {
                   </p>
                   <p
                     style={{
-                      // textAlign: "justify",
                       textAlign: "left",
                       color: "#463F2F",
                       lineHeight: "1.5",
@@ -190,7 +187,6 @@ const Footer = () => {
                 <Card.Text>
                   <p
                     style={{
-                      // textAlign: "justify",
                       textAlign: "left",
                       color: "#463F2F",
                       lineHeight: "1.5",
@@ -206,7 +202,6 @@ const Footer = () => {
                   </p>
                   <p
                     style={{
-                      //  textAlign: "justify",
                       textAlign: "left",
                       color: "#463F2F",
                       lineHeight: "1.5",
@@ -222,7 +217,6 @@ const Footer = () => {
                   </p>
                   <p
                     style={{
-                      // textAlign: "justify",
                       textAlign: "left",
                       color: "#463F2F",
                       lineHeight: "1.5",
@@ -298,11 +292,6 @@ const Footer = () => {
                 opacity: 1,
 
                 textDecoration: "underline",
-
-                // textDecoration: "none",
-                // borderBottom: "1px solid #463F2F",
-                // paddingBottom: "",
-                // display: "inline-block",
               }}
             >
               Website by Code Blauw
