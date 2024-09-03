@@ -176,7 +176,7 @@ const Footer = () => {
                     lineHeight: "1.5",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 100,
-                    fontSize: "0.875rem",
+                    fontSize: "1rem",
                     letterSpacing: "0px",
                     opacity: 1,
                     margin: "2rem 0 2rem 2rem",
