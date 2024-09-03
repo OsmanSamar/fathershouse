@@ -545,7 +545,7 @@ const Mission = () => {
                 {/* Added   marginLeft: "4rem", */}
                 <Col
                   style={{
-                    marginLeft: "4rem",
+                    marginLeft: "2rem",
                   }}
                 >
                   <Card.Text

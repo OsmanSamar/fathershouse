@@ -67,7 +67,7 @@ const TestimonialsSlider = () => {
           <div
             style={{
               margin: "2rem auto 0 auto",
-              width: "48%",
+              width: "41%",
               padding: "0 0.75rem",
             }}
             className="d-none d-md-block "
