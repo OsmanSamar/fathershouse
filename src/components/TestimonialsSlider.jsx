@@ -9,6 +9,8 @@ import {
 } from "mdb-react-ui-kit";
 import { Container, Button } from "react-bootstrap";
 import Avatar from "../assets/avatar.png";
+import Aden from "../assets/aden.png";
+import Hans from "../assets/hans.png";
 import Image from "react-bootstrap/Image";
 
 const TestimonialsSlider = () => {
@@ -20,6 +22,7 @@ const TestimonialsSlider = () => {
   };
 
   // Handle screen resize
+
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 576);
@@ -37,6 +40,7 @@ const TestimonialsSlider = () => {
       }}
     >
       {/* Heading Section */}
+
       <Container>
         <div className="text-center mb-8">
           <h1
@@ -63,7 +67,9 @@ const TestimonialsSlider = () => {
           >
             The team
           </h2>
-          {/* Dispaly on md and lg screen */}
+
+          {/* Dispaly text on md and lg screen */}
+
           <div
             style={{
               margin: "2rem auto 0 auto",
@@ -88,7 +94,8 @@ const TestimonialsSlider = () => {
             </p>
           </div>
 
-          {/* Dispaly on sm  screen */}
+          {/* Dispaly text on sm  screen */}
+
           <div className="d-block d-md-none ">
             <p
               style={{
@@ -107,7 +114,9 @@ const TestimonialsSlider = () => {
           </div>
         </div>
       </Container>
+
       {/* End of Header Section */}
+
       {/* Begin of Testimonials */}
       <Container className="p-4 p-sm-auto p-md-5 p-lg-7">
         <MDBRow>
@@ -138,7 +147,8 @@ const TestimonialsSlider = () => {
                     data-aos-easing="ease-in-out"
                   >
                     <Image
-                      src={Avatar}
+                      // src={Avatar}
+                      src={cardId === 1 ? Avatar : cardId === 2 ? Hans : Aden}
                       alt={`Avatar ${cardId}`}
                       className="center  "
                       style={{
