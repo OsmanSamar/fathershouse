@@ -36,7 +36,7 @@ const Footer = () => {
               width: "516px",
               maxWidth: "100%",
               // marginRight: "-0.5rem",
-              marginRight: "8rem",
+              marginLeft: "4em",
             }}
           >
             <Card
