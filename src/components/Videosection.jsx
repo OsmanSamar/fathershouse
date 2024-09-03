@@ -98,17 +98,24 @@ const Videosection = () => {
                     color: isHovered ? "#ffffff" : "#463F2F",
                     backgroundColor: isHovered ? "#d97f2e" : "#F49640",
                     border: "none",
-                    padding: "7px ",
-                    height: "42px",
+                    padding: "14px ",
+                    height: "46px",
+                    maxHeight: "50px",
+
                     textAlign: "center",
                     fontSize: "0.75rem",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: 500,
+                    fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
                     marginTop: "3rem",
                     marginBottom: "2rem",
                     textTransform: "none",
+
+                    marginRight: "-1rem",
+                    // Width: "auto",
+                    // /////////////////
+                    // ///////////////////////
                     transform: isClicked
                       ? "scale(0.95)"
                       : isHovered
@@ -132,8 +139,8 @@ const Videosection = () => {
           <div style={{ height: "4rem" }}></div>
 
           {/* Video Grid Section */}
-          <Container fluid style={{ padding: 0 }}>
-            {/*  Added   marginLeft: "-1rem"*/}
+          <Container style={{ padding: 0 }}>
+            {/*  Added fluid  marginLeft: "-1rem"*/}
 
             <Row className={isMobile ? "g-4" : "g-3"}>
               {(isMobile ? mobileVideos : videos).map((video) => (
@@ -145,6 +152,10 @@ const Videosection = () => {
                     data-aos-delay="50"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
+                    style={{
+                      margin: " 0 -0.2rem 0 -0.3rem",
+                      //  padding: "0 0",
+                    }}
                   >
                     {video.youtube && (
                       <div
