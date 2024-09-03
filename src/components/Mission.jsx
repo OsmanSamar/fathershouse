@@ -398,7 +398,7 @@ const Mission = () => {
                 letterSpacing: "0px",
                 opacity: 1,
                 margin: "2rem auto 0 auto",
-                width: "39%",
+                width: "40%",
               }}
             >
               {}
