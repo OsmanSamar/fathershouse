@@ -20,7 +20,7 @@ const FNavbar = () => {
       expand="lg"
       style={{
         backgroundColor: "#F8F4EE",
-        // fontSize: "1rem",
+        fontSize: "1rem",
         padding: "1rem",
         ///////Added padding
       }}
