@@ -59,7 +59,7 @@ const Videosection = () => {
                   opacity: 1,
                   marginTop: "2rem",
                   // Added
-                  // marginLeft: "-1.5rem",
+                  marginLeft: "-1.5rem",
                   // fontSize: "1.2rem",
                 }}
               >
@@ -76,7 +76,7 @@ const Videosection = () => {
                   marginTop: "1rem",
                   marginBottom: "2rem",
                   // Added
-                  // marginLeft: "-1.5rem",
+                  marginLeft: "-1.5rem",
                 }}
               >
                 Watch teachings
