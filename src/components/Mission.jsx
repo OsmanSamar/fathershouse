@@ -393,7 +393,7 @@ const Mission = () => {
               style={{
                 color: "#463F2F",
                 fontFamily: "Inter, Regular",
-                fontSize: "1.0rem",
+                fontSize: "1.2rem",
                 lineHeight: "1.5rem",
                 letterSpacing: "0px",
                 opacity: 1,
