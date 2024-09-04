@@ -348,7 +348,7 @@ const Footer = () => {
                     fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0 0.5rem 1rem 0",
+                    margin: "0 0.5rem 1rem 2rem",
                     padding: "0 1rem",
 
                     // fontSize: "calc(0.75rem + 0.5vw)",
@@ -370,7 +370,7 @@ const Footer = () => {
                     fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0 0.5rem 1rem 0",
+                    margin: "0.5rem 0.5rem 1rem 0",
                     padding: "0 1rem",
 
                     // fontSize: "calc(0.75rem + 0.5vw)",
