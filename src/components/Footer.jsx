@@ -324,19 +324,17 @@ const Footer = () => {
           <div
             style={{
               backgroundColor: "transparent",
-              // width: "40vw",
+
               border: "none",
               boxShadow: "none",
-              width: "100vw",
+              width: "100%",
               maxWidth: "100%",
-              // maxWidth: "60vw",
             }}
           >
             <Row className="g-2 align-items-center">
               <Col
                 xs={12}
                 md={4}
-                //  lg={3}
                 className="text-center text-md-start text-lg-start"
               >
                 {/* Diplay text on md and lg screen */}
@@ -350,8 +348,9 @@ const Footer = () => {
                     fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0 0.5rem 1rem 0",
+                    // margin: "0 0.5rem 1rem 0",
                     padding: "0 1rem",
+                    margin: "0.5rem 0 1rem 0",
 
                     // fontSize: "calc(0.75rem + 0.5vw)",
 
@@ -372,7 +371,7 @@ const Footer = () => {
                     fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0.5rem 0.5rem 1rem 0",
+                    margin: "0.5rem 0.5rem 1rem 0.5rem",
                     padding: "0 1rem",
                   }}
                 >
