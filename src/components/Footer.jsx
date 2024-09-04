@@ -336,7 +336,7 @@ const Footer = () => {
             <Row className="g-2 align-items-center">
               <Col
                 xs={12}
-                md={3}
+                md={5}
                 className="text-center text-md-start text-lg-start"
               >
                 {/* Diplay text on md and lg screen */}
