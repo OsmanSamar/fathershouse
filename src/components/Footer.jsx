@@ -349,16 +349,16 @@ const Footer = () => {
                     color: "#463F2F",
                     lineHeight: "1.2",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: 500,
+                    fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0 1rem 1rem 1rem",
+                    margin: "0 2rem 1rem 2rem",
                     padding: "0 1rem",
                     // margin: "0.5rem 0 1rem 4rem",
 
-                    fontSize: "calc(0.75rem + 1vw)",
+                    // fontSize: "calc(0.5rem + 1vw)",
 
-                    // fontSize: "calc(4px + 1vw)",
+                    fontSize: "calc(5px + 1vw)",
                   }}
                 >
                   <p>Questions?</p>
