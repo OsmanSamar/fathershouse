@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
 import Bggroup from "../assets/Group29@.png";
-import { Si3M } from "react-icons/si";
+//import { Si3M } from "react-icons/si";
 
 const Footer = () => {
   // Button Style
