@@ -320,8 +320,8 @@ const Footer = () => {
             padding: "2rem",
           }}
         >
-          <Form
-            // className=" ml-md-4"
+          {/* <Form
+            
             style={{
               backgroundColor: "red",
               width: "50vw",
@@ -384,18 +384,17 @@ const Footer = () => {
                 ></Form.Control>
               </Col>
             </Row>
-          </Form>
-          {/* <div
+          </Form> */}
+          <div
             style={{
               // backgroundColor: "transparent",
-              backgroundColor: "red",
+              //  backgroundColor: "red",
               width: "100%",
               border: "none",
               boxShadow: "none",
               maxWidth: "100%",
             }}
           >
-           
             <Row className="g-2 align-items-center">
               <Col
                 xs={12}
@@ -404,7 +403,7 @@ const Footer = () => {
                 //md=4
                 className="text-center text-md-start text-lg-start"
               >
-                 Diplay text on md and lg screen 
+                {/* Diplay text on md and lg screen */}
                 <div
                   className=" d-none d-md-block text-center text-md-start"
                   style={{
@@ -416,7 +415,7 @@ const Footer = () => {
                     fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0 0.5rem 1rem 4rem",
+                    margin: "0 0.5rem 1rem 0",
                     padding: "0 1rem",
 
                     // fontSize: "calc(0.75rem + 0.5vw)",
@@ -426,7 +425,7 @@ const Footer = () => {
                 >
                   <p>Questions?</p>
                 </div>
-                 Diplay text on sm screen 
+                {/* Diplay text on sm screen */}
                 <div
                   className=" d-block d-md-none text-center "
                   style={{
@@ -479,7 +478,7 @@ const Footer = () => {
                 />
               </Col>
             </Row>
-          </div> */}
+          </div>
           {/* To add bottom border */}
           <div
             style={{
