@@ -332,23 +332,50 @@ const Footer = () => {
               <Col
                 xs={12}
                 md={4}
+                lg={3}
+                //md=4
                 className="text-center text-md-start text-lg-start"
               >
+                {/* Diplay text on md and lg screen */}
                 <div
-                  className="text-center text-md-start"
+                  className=" d-none d-md-block text-center text-md-start"
                   style={{
                     // textAlign: "inherit",
                     // textAlign: "left",
                     color: "#463F2F",
                     lineHeight: "1.2",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: 500,
+                    fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0 0.1rem 1rem 0",
+                    margin: "0 0.5rem 1rem 0",
                     padding: "0 1rem",
 
-                    fontSize: "calc(0.75rem + 1vw)",
+                    // fontSize: "calc(0.75rem + 0.5vw)",
+
+                    fontSize: "calc(4px + 1vw)",
+                  }}
+                >
+                  <p>Questions?</p>
+                </div>
+                {/* Diplay text on sm screen */}
+                <div
+                  className=" d-block d-md-none text-center "
+                  style={{
+                    // textAlign: "inherit",
+                    // textAlign: "left",
+                    color: "#463F2F",
+                    lineHeight: "1.2",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: 600,
+                    letterSpacing: "0px",
+                    opacity: 1,
+                    margin: "0 0.5rem 1rem 0",
+                    padding: "0 1rem",
+
+                    // fontSize: "calc(0.75rem + 0.5vw)",
+
+                    // fontSize: "calc(4px + 1vw)",
                   }}
                 >
                   <p>Questions?</p>
