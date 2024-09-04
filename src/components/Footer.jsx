@@ -329,6 +329,8 @@ const Footer = () => {
               boxShadow: "none",
               width: "100%",
               maxWidth: "100%",
+              padding: "0",
+              margin: "0",
             }}
           >
             <Row className="g-2 align-items-center">
@@ -342,6 +344,7 @@ const Footer = () => {
                 <div
                   className=" d-none d-md-block  text-md-start"
                   style={{
+                    textAlign: "left",
                     color: "#463F2F",
                     lineHeight: "1.2",
                     fontFamily: "Inter, sans-serif",
