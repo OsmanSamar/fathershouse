@@ -361,7 +361,7 @@ const Footer = () => {
               >
                 <Form.Label>Questions?</Form.Label>
               </Col>
-              <Col md={6} sm={12}>
+              <Col md={6} sm={12} lg={4}>
                 <Form.Control
                   style={{
                     textAlign: "center",
