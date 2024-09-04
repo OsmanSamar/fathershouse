@@ -324,7 +324,7 @@ const Footer = () => {
           <div
             style={{
               backgroundColor: "transparent",
-              width: "100vw",
+              width: "100%",
               border: "none",
               boxShadow: "none",
               maxWidth: "100%",
@@ -350,8 +350,8 @@ const Footer = () => {
                     fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    // margin: "0 0.5rem 1rem 0",
-                    // padding: "0 1rem",
+                    margin: "0 0.5rem 1rem 0.5rem",
+                    padding: "0 1rem",
 
                     // fontSize: "calc(0.75rem + 0.5vw)",
 
