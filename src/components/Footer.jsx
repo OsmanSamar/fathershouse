@@ -352,7 +352,7 @@ const Footer = () => {
                     fontWeight: 500,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0 0.5rem 1rem 0",
+                    margin: "0 1rem 1rem 1rem",
                     padding: "0 1rem",
                     // margin: "0.5rem 0 1rem 4rem",
 
@@ -366,7 +366,7 @@ const Footer = () => {
               </Col>
               <Col
                 xs={12}
-                md={3}
+                md={4}
                 className="text-center text-md-start text-lg-start"
               >
                 <input
@@ -389,7 +389,7 @@ const Footer = () => {
                     // maxWidth: "100%",
                     objectFit: "contain",
                     boxSizing: "border-box",
-                    margin: "0 1rem 1rem 0",
+                    margin: "0 1rem 1rem 1rem",
                   }}
                 />
               </Col>
