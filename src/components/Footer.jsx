@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Bggroup from "../assets/Group29@.png";
 //import { Si3M } from "react-icons/si";
 
@@ -321,76 +321,10 @@ const Footer = () => {
             padding: "2rem",
           }}
         >
-          {/* <Form
-            
-            style={{
-              backgroundColor: "red",
-              width: "50vw",
-              maxWidth: "100%",
-            }}
-          >
-            <Row className="mb-3 justify-content-sm-center">
-              <Col
-                className="d-none d-md-block  text-md-start"
-                md={3}
-                sm={12}
-                style={{
-                  color: "#463F2F",
-                  lineHeight: "1.2",
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: 600,
-                  letterSpacing: "0px",
-                  opacity: 1,
-                  fontSize: "calc(4px + 1vw)",
-                  // marginLeft: "-5rem",
-                }}
-              >
-                <Form.Label>Questions?</Form.Label>
-              </Col>
-              <Col
-                className=" d-block d-md-none text-center "
-                md={3}
-                sm={12}
-                style={{
-                  color: "#463F2F",
-                  lineHeight: "1.2",
-                  fontFamily: "Inter, sans-serif",
-                  fontWeight: 600,
-                  letterSpacing: "0px",
-                  opacity: 1,
-                }}
-              >
-                <Form.Label>Questions?</Form.Label>
-              </Col>
-              <Col md={6} sm={12} lg={4}>
-                <Form.Control
-                  style={{
-                    textAlign: "center",
-                    color: "#463F2F",
-                    padding: "0.7rem",
-                    borderRadius: "4px",
-                    border: "1px solid #ccc",
-                    lineHeight: "1.2",
-                    fontFamily: "Inter, sans-serif",
-                    fontWeight: 600,
-                    letterSpacing: "0px",
-                    fontSize: "0.75rem",
-                    opacity: 1,
-                    objectFit: "contain",
-                    boxSizing: "border-box",
-                    margin: "0 0 ",
-                  }}
-                  type="text"
-                  placeholder="info@fathershouse.nl"
-                ></Form.Control>
-              </Col>
-            </Row>
-          </Form> */}
           <div
             style={{
               backgroundColor: "transparent",
-              //  backgroundColor: "red",
-              width: "100%",
+              width: "100vw",
               border: "none",
               boxShadow: "none",
               maxWidth: "100%",
