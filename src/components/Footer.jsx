@@ -236,6 +236,7 @@ const Footer = () => {
           </Container>
 
           {/* Rights Reserved */}
+
           <div
             className=" d-none d-md-flex   flex-md-row   "
             style={{
@@ -304,8 +305,8 @@ const Footer = () => {
 
         {/* End of Left Colum  */}
 
-        {/* ***************************************** */}
         {/* Right Column with newsletter */}
+
         <Col
           xs={12}
           sm={12}
@@ -387,7 +388,7 @@ const Footer = () => {
           </Form> */}
           <div
             style={{
-              // backgroundColor: "transparent",
+              backgroundColor: "transparent",
               //  backgroundColor: "red",
               width: "100%",
               border: "none",
@@ -404,8 +405,9 @@ const Footer = () => {
                 className="text-center text-md-start text-lg-start"
               >
                 {/* Diplay text on md and lg screen */}
+
                 <div
-                  className=" d-none d-md-block text-center text-md-start"
+                  className=" d-none d-md-block  text-md-start"
                   style={{
                     // textAlign: "inherit",
                     // textAlign: "left",
@@ -425,7 +427,9 @@ const Footer = () => {
                 >
                   <p>Questions?</p>
                 </div>
+
                 {/* Diplay text on sm screen */}
+
                 <div
                   className=" d-block d-md-none text-center "
                   style={{
@@ -479,7 +483,9 @@ const Footer = () => {
               </Col>
             </Row>
           </div>
+
           {/* To add bottom border */}
+
           <div
             style={{
               borderBottom: "1px solid #463F2F",
