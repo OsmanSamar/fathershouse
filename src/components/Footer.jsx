@@ -318,7 +318,7 @@ const Footer = () => {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            padding: "2rem",
+            padding: "2rem ",
           }}
         >
           <div
@@ -336,29 +336,29 @@ const Footer = () => {
             <Row className="g-2 align-items-center">
               <Col
                 xs={12}
-                md={5}
+                md={4}
                 className="text-center text-md-start text-lg-start"
               >
                 {/* Diplay text on md and lg screen */}
                 {/* d-none d-md-block */}
 
                 <div
-                  className=" d-none d-md-block  text-md-start"
+                  // className=" d-none d-md-block  text-md-start"
                   style={{
-                    textAlign: "left",
                     color: "#463F2F",
                     lineHeight: "1.2",
                     fontFamily: "Inter, sans-serif",
-                    fontWeight: 600,
+                    fontWeight: 500,
                     letterSpacing: "0px",
                     opacity: 1,
                     // margin: "0 0.5rem 1rem 0",
                     padding: "0 1rem",
-                    margin: "0.5rem 0 1rem 4rem",
+                    // margin: "0.5rem 0 1rem 4rem",
+                    margin: "0 0.1rem 1rem 0",
 
-                    // fontSize: "calc(0.75rem + 0.5vw)",
+                    fontSize: "calc(0.75rem + 1vw)",
 
-                    fontSize: "calc(4px + 1vw)",
+                    //   fontSize: "calc(4px + 1vw)",
                   }}
                 >
                   <p>Questions?</p>
@@ -366,7 +366,7 @@ const Footer = () => {
 
                 {/* Diplay text on sm screen */}
 
-                <div
+                {/* <div
                   className=" d-block d-md-none text-center "
                   style={{
                     color: "#463F2F",
@@ -380,7 +380,7 @@ const Footer = () => {
                   }}
                 >
                   <p>Questions?</p>
-                </div>
+                </div> */}
               </Col>
               <Col
                 xs={12}
