@@ -321,7 +321,7 @@ const Footer = () => {
           }}
         >
           <Form
-            className=" ml-md-2.5"
+            // className=" ml-md-4"
             style={{
               backgroundColor: "red",
               width: "50vw",
@@ -341,6 +341,7 @@ const Footer = () => {
                   letterSpacing: "0px",
                   opacity: 1,
                   fontSize: "calc(4px + 1vw)",
+                  marginLeft: "-5rem",
                 }}
               >
                 <Form.Label>Questions?</Form.Label>
@@ -360,8 +361,24 @@ const Footer = () => {
               >
                 <Form.Label>Questions?</Form.Label>
               </Col>
-              <Col md={8} sm={12}>
+              <Col md={6} sm={12}>
                 <Form.Control
+                  style={{
+                    textAlign: "center",
+                    color: "#463F2F",
+                    padding: "0.7rem",
+                    borderRadius: "4px",
+                    border: "1px solid #ccc",
+                    lineHeight: "1.2",
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: 600,
+                    letterSpacing: "0px",
+                    fontSize: "0.75rem",
+                    opacity: 1,
+                    objectFit: "contain",
+                    boxSizing: "border-box",
+                    margin: "0 0 ",
+                  }}
                   type="text"
                   placeholder="info@fathershouse.nl"
                 ></Form.Control>
