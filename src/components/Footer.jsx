@@ -341,7 +341,7 @@ const Footer = () => {
                   letterSpacing: "0px",
                   opacity: 1,
                   fontSize: "calc(4px + 1vw)",
-                  marginLeft: "-5rem",
+                  // marginLeft: "-5rem",
                 }}
               >
                 <Form.Label>Questions?</Form.Label>
