@@ -340,9 +340,10 @@ const Footer = () => {
                 className="text-center text-md-start text-lg-start"
               >
                 {/* Diplay text on md and lg screen */}
+                {/* d-none d-md-block */}
 
                 <div
-                  className=" d-none d-md-block  text-md-start"
+                  className=" text-center  text-md-start"
                   style={{
                     textAlign: "left",
                     color: "#463F2F",
@@ -365,7 +366,7 @@ const Footer = () => {
 
                 {/* Diplay text on sm screen */}
 
-                <div
+                {/* <div
                   className=" d-block d-md-none text-center "
                   style={{
                     color: "#463F2F",
@@ -379,7 +380,7 @@ const Footer = () => {
                   }}
                 >
                   <p>Questions?</p>
-                </div>
+                </div> */}
               </Col>
               <Col
                 xs={12}
