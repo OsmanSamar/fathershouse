@@ -324,10 +324,12 @@ const Footer = () => {
           <div
             style={{
               backgroundColor: "transparent",
-              width: "100%",
+              // width: "40vw",
               border: "none",
               boxShadow: "none",
+              width: "100vw",
               maxWidth: "100%",
+              // maxWidth: "60vw",
             }}
           >
             <Row className="g-2 align-items-center">
@@ -342,15 +344,13 @@ const Footer = () => {
                 <div
                   className=" d-none d-md-block  text-md-start"
                   style={{
-                    // textAlign: "inherit",
-                    // textAlign: "left",
                     color: "#463F2F",
                     lineHeight: "1.2",
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0 0.5rem 1rem 0.5rem",
+                    margin: "0 0.5rem 1rem 0",
                     padding: "0 1rem",
 
                     // fontSize: "calc(0.75rem + 0.5vw)",
@@ -419,6 +419,8 @@ const Footer = () => {
               marginLeft: "-2rem",
               marginRight: "-2rem",
               width: "calc(100% + 4rem)",
+              marginTop: "2rem",
+              marginBottom: "2rem",
             }}
           ></div>
 
