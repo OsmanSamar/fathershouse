@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Form } from "react-bootstrap";
 import Bggroup from "../assets/Group29@.png";
+import { Si3M } from "react-icons/si";
 
 const Footer = () => {
   // Button Style
@@ -319,15 +320,65 @@ const Footer = () => {
             padding: "2rem",
           }}
         >
-          <div
+          <Form
+            className=" ml-md-2.5"
             style={{
-              backgroundColor: "transparent",
+              backgroundColor: "red",
+              width: "50vw",
+              maxWidth: "100%",
+            }}
+          >
+            <Row className="mb-3 justify-content-sm-center">
+              <Col
+                className="d-none d-md-block  text-md-start"
+                md={3}
+                sm={12}
+                style={{
+                  color: "#463F2F",
+                  lineHeight: "1.2",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: 600,
+                  letterSpacing: "0px",
+                  opacity: 1,
+                  fontSize: "calc(4px + 1vw)",
+                }}
+              >
+                <Form.Label>Questions?</Form.Label>
+              </Col>
+              <Col
+                className=" d-block d-md-none text-center "
+                md={3}
+                sm={12}
+                style={{
+                  color: "#463F2F",
+                  lineHeight: "1.2",
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: 600,
+                  letterSpacing: "0px",
+                  opacity: 1,
+                }}
+              >
+                <Form.Label>Questions?</Form.Label>
+              </Col>
+              <Col md={8} sm={12}>
+                <Form.Control
+                  type="text"
+                  placeholder="info@fathershouse.nl"
+                ></Form.Control>
+              </Col>
+            </Row>
+          </Form>
+          {/* <div
+            style={{
+              // backgroundColor: "transparent",
+              backgroundColor: "red",
               width: "100%",
               border: "none",
               boxShadow: "none",
               maxWidth: "100%",
             }}
           >
+           
             <Row className="g-2 align-items-center">
               <Col
                 xs={12}
@@ -336,7 +387,7 @@ const Footer = () => {
                 //md=4
                 className="text-center text-md-start text-lg-start"
               >
-                {/* Diplay text on md and lg screen */}
+                 Diplay text on md and lg screen 
                 <div
                   className=" d-none d-md-block text-center text-md-start"
                   style={{
@@ -358,7 +409,7 @@ const Footer = () => {
                 >
                   <p>Questions?</p>
                 </div>
-                {/* Diplay text on sm screen */}
+                 Diplay text on sm screen 
                 <div
                   className=" d-block d-md-none text-center "
                   style={{
@@ -411,7 +462,7 @@ const Footer = () => {
                 />
               </Col>
             </Row>
-          </div>
+          </div> */}
           {/* To add bottom border */}
           <div
             style={{
