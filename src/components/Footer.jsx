@@ -348,7 +348,7 @@ const Footer = () => {
                     fontWeight: 600,
                     letterSpacing: "0px",
                     opacity: 1,
-                    margin: "0 0.5rem 1rem 2rem",
+                    margin: "0 0.5rem 1rem 4rem",
                     padding: "0 1rem",
 
                     // fontSize: "calc(0.75rem + 0.5vw)",
@@ -406,7 +406,7 @@ const Footer = () => {
                     // maxWidth: "100%",
                     objectFit: "contain",
                     boxSizing: "border-box",
-                    margin: "0 0.1rem 1rem 0",
+                    margin: "0 1rem 1rem 0",
                   }}
                 />
               </Col>
