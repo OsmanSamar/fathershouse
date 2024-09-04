@@ -343,7 +343,7 @@ const Footer = () => {
                 {/* d-none d-md-block */}
 
                 <div
-                  className=" text-center  text-md-start"
+                  className=" d-none d-md-block  text-md-start"
                   style={{
                     textAlign: "left",
                     color: "#463F2F",
@@ -354,7 +354,7 @@ const Footer = () => {
                     opacity: 1,
                     // margin: "0 0.5rem 1rem 0",
                     padding: "0 1rem",
-                    margin: "0.5rem 0 1rem 0",
+                    margin: "0.5rem 0 1rem 4rem",
 
                     // fontSize: "calc(0.75rem + 0.5vw)",
 
@@ -366,7 +366,7 @@ const Footer = () => {
 
                 {/* Diplay text on sm screen */}
 
-                {/* <div
+                <div
                   className=" d-block d-md-none text-center "
                   style={{
                     color: "#463F2F",
@@ -380,7 +380,7 @@ const Footer = () => {
                   }}
                 >
                   <p>Questions?</p>
-                </div> */}
+                </div>
               </Col>
               <Col
                 xs={12}
